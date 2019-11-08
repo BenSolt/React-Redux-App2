@@ -5,7 +5,7 @@ import HaloRank from "./HaloRank";
 
 const Home = ({ getHalo, halodata, isFetching, error}) => {
 
-const [hrank,setHrank] = useState([]);
+//const [hrank,setHrank] = useState([]);
 
     useEffect((halodata) => {
         getHalo();

@@ -1,5 +1,6 @@
 import React from "react";
 
+
 export default function HaloRank({h}) {
   // console.log('tiers',h )
     return (

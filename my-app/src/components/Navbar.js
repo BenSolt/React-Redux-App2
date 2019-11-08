@@ -13,7 +13,8 @@ export default function Navig() {
 
             <div>
                 <NavLink className='navlink' to='/dogs'>DOGS</NavLink>
-                <NavLink className='navlink' to='/halo'>HALO</NavLink>
+                <NavLink className='navlink' to='/halo'>HALO RANKS</NavLink>
+                <NavLink className='navlink' to='/haloplayers'>HALO PLAYERS</NavLink>
             </div>
 
         </nav>

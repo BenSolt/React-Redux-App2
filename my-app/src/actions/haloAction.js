@@ -9,8 +9,6 @@ export const getHalo = () => dispatch => {
       //axios
      axiosWithAuth()
      .get('metadata/h5/metadata/csr-designations')
-    //PLAYER STATS 
-    //.get ('stats/h5/servicerecords/arena?players={players}[&seasonId]') 
     .then(res => {
         console.log(res.data)
         dispatch({type: FETCHING_INFO_HALO_SUCESS, payload: res.data})

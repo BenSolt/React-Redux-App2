@@ -23,14 +23,16 @@ nav{
   justify-content: center;
 }
 /* HALO.JS */
-.Halo_Rank_Container{
-  background: lightblue;
-}
 
-.Ranks{
+/* .Halo_Rank_Container{
+  background: lightblue;
+} */
+
+/* .Ranks{
   display:flex;
-  /* border: 2px solid red; */
-}
+  border: 2px solid red;
+} */
+
 /* HALO RANK.JS */
 
 .names{
@@ -47,16 +49,16 @@ nav{
   border: 2px solid black;
 }
 .Tier{
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   width: 100px;
   height: auto;
   border: 2px solid black;
 }
 
+/* HOME PAGE - react logo */
 
-
-/* .App-logo {
+.App-logo {
   height: 40vmin;
 }
 
@@ -73,4 +75,4 @@ nav{
 
 .App-link {
   color: #09d3ac;
-} */
+}

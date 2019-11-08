@@ -8,15 +8,17 @@ import * as serviceWorker from './serviceWorker';
 import { Provider } from 'react-redux';
 import thunk from 'redux-thunk';
 import { createStore, applyMiddleware, compose } from 'redux';
-import {reducer} from './reducers/HaloReducer';
-import {dogReducer} from './reducers/DogReducer';
-import { BrowserRouter as Router } from "react-router-dom";
 
+// IMPORT REDUCERS
+import {haloReducer} from './reducers/HaloReducer';
+//import {dogReducer} from './reducers/DogReducer';
+import { BrowserRouter as Router } from "react-router-dom";
+//import {rootReducer} from './reducers'
 //Compose Enhancer
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 // STORE
-const store = createStore(reducer, composeEnhancers(applyMiddleware(thunk)));
+const store = createStore(haloReducer, composeEnhancers(applyMiddleware(thunk)));
 
 
 
