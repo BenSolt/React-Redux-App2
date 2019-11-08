@@ -1,7 +1,7 @@
-import {FETCHING_INFO, FETCHING_FAIL} from '../actions';
+import {FETCHING_INFO, FETCHING_FAIL} from '../actions/dogAction';
 
 const initialState = {
-    //message: null,
+    message: null,
     isFetching: false,
     error:''
 }
