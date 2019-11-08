@@ -8,7 +8,8 @@ import * as serviceWorker from './serviceWorker';
 import { Provider } from 'react-redux';
 import thunk from 'redux-thunk';
 import { createStore, applyMiddleware, compose } from 'redux';
-import {reducer} from './reducers';
+import {reducer} from './reducers/HaloReducer';
+import {dogReducer} from './reducers/DogReducer';
 import { BrowserRouter as Router } from "react-router-dom";
 
 //Compose Enhancer

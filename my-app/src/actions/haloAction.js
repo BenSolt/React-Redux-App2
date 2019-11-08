@@ -6,9 +6,9 @@ export const FETCHING_INFO_HALO_SUCESS = 'FETCHING_INFO_HALO_SUCESS'
 
 export const getHalo = () => dispatch => {
     dispatch({type: FETCHING_INFO_HALO});
-    //axios
-    axiosWithAuth()
-    .get('metadata/h5/metadata/csr-designations')
+      //axios
+     axiosWithAuth()
+     .get('metadata/h5/metadata/csr-designations')
     //PLAYER STATS 
     //.get ('stats/h5/servicerecords/arena?players={players}[&seasonId]') 
     .then(res => {

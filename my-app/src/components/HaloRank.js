@@ -1,11 +1,20 @@
 import React from "react";
 
 export default function HaloRank({h}) {
+  // console.log('tiers',h )
     return (
-      <div>
+      <div className="names">
           <h1>{h.name}</h1>
-        <img src={h.bannerImageUrl}/>
 
+          <div>
+            {/* <img  className='Banner' src={h.bannerImageUrl}/> */}
+
+            {h.tiers.map(h => {
+            return <img className="Tier" src={h.iconImageUrl}/>
+         
+        })}
+          </div>
+        
       </div>
 
     )

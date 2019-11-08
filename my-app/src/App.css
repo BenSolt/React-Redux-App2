@@ -2,24 +2,7 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #09d3ac;
-}
 
 .navlink{
   color: black;
@@ -39,4 +22,55 @@ nav{
   display: flex;
   justify-content: center;
 }
+/* HALO.JS */
+.Halo_Rank_Container{
+  background: lightblue;
+}
 
+.Ranks{
+  display:flex;
+  /* border: 2px solid red; */
+}
+/* HALO RANK.JS */
+
+.names{
+  /* display: flex; */
+  /* flex-direction: column; */
+  border: 2px solid black;
+}
+
+
+.Banner{
+  /* display: flex; */
+  width: 200px;
+  height: auto; 
+  border: 2px solid black;
+}
+.Tier{
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  height: auto;
+  border: 2px solid black;
+}
+
+
+
+/* .App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+} */

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { connect } from 'react-redux';
-//import {getDogs} from '../actions/dogAction';
 import {getHalo} from '../actions/haloAction';
 import HaloRank from "./HaloRank";
 
@@ -9,7 +8,6 @@ const Home = ({ getHalo, halodata, isFetching, error}) => {
 const [hrank,setHrank] = useState([]);
 
     useEffect((halodata) => {
-// console.log(props)
         getHalo();
     }, [getHalo]);
 
@@ -19,18 +17,18 @@ const [hrank,setHrank] = useState([]);
    
     return (
         <>
-        <div className='Container'>
+        <div className='Halo_Rank_Container'>
         <h1>Halo Ranks</h1>
+        <div className='Ranks'>
         {halodata.map(h => {
             return < HaloRank key={h.id} h={h}/>
          
         })}
+        </div>
             
-
             <div className='Btn'>
                 <button onClick={getHalo}>Get Dog Info</button>
-               
-
+            
             </div>
 
         </div>
@@ -40,7 +38,7 @@ const [hrank,setHrank] = useState([]);
 };
 
 const mapStateToProps = state => {
-    console.log(state.halodata)
+    // console.log(state.halodata)
     return {
         
         halodata: state.halodata,
