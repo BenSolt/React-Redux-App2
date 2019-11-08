@@ -3,7 +3,8 @@ import React from 'react';
 import './App.css';
 
 //MY IMPORTS
-import Dogs from './components/Halo';
+import Dogs from './components/Dogs';
+import Halo from './components/Halo';
 import Navbar from './components/Navbar';
 import { Route } from "react-router-dom";
 
@@ -15,6 +16,7 @@ function App() {
      
 
       <Route path="/dogs" component={Dogs}/>
+      <Route path="/halo" component={Halo}/>
 
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />

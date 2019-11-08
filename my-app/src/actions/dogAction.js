@@ -15,6 +15,7 @@ export const getDogs = () => dispatch => {
     .then(res => {
         console.log(res)
         dispatch({type: FETCHING_INFO, payload: res.data.message})
+        
     })
     .catch(err => {
         console.log(err)

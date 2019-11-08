@@ -3,7 +3,7 @@ import axios from "axios";
 const axiosWithAuth = () => {
   const token = localStorage.getItem("token");
   var key = process.env.REACT_APP_KEY
-  console.log(key)
+//   console.log(key)
   return axios.create({
     baseURL: 'https://cors-anywhere.herokuapp.com/https://www.haloapi.com',
     headers: {

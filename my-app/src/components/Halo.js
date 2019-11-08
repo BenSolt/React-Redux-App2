@@ -2,28 +2,30 @@ import React, { useState, useEffect } from 'react';
 import { connect } from 'react-redux';
 //import {getDogs} from '../actions/dogAction';
 import {getHalo} from '../actions/haloAction';
+import HaloRank from "./HaloRank";
 
+const Home = ({ getHalo, halodata, isFetching, error}) => {
 
-const Home = ({ getHalo, name, isFetching, error}) => {
+const [hrank,setHrank] = useState([]);
 
-    
-
-    useEffect(() => {
+    useEffect((halodata) => {
+// console.log(props)
         getHalo();
     }, [getHalo]);
 
     if (isFetching) {
         return <h1>fetching Data!</h1>;
-    }
+    }else{
+   
     return (
         <>
         <div className='Container'>
-            <div>RANK IMAGES</div>
-
-            <div className='Img'>
-                <img src={name}/>
-            </div>
-
+        <h1>Halo Ranks</h1>
+        {halodata.map(h => {
+            return < HaloRank key={h.id} h={h}/>
+         
+        })}
+            
 
             <div className='Btn'>
                 <button onClick={getHalo}>Get Dog Info</button>
@@ -34,11 +36,14 @@ const Home = ({ getHalo, name, isFetching, error}) => {
         </div>
         </>
     )
+  }
 };
 
 const mapStateToProps = state => {
+    console.log(state.halodata)
     return {
-        message: state.message,
+        
+        halodata: state.halodata,
         isFetching: state.isFetching,
         error: state.error
     };
