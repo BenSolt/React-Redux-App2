@@ -1,0 +1,9 @@
+.PlayerCard{
+    width: 400px;
+    border: 3px solid black;
+}
+
+.Gamertag{
+background: gold;
+padding: 5px;
+}

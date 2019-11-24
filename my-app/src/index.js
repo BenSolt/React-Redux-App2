@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import './home.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
@@ -13,7 +14,7 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import {haloReducer} from './reducers/HaloReducer';
 //import {dogReducer} from './reducers/DogReducer';
 import { BrowserRouter as Router } from "react-router-dom";
-//import {rootReducer} from './reducers'
+//import rootReducer from './reducers'
 //Compose Enhancer
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 

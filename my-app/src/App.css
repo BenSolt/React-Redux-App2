@@ -2,61 +2,149 @@
   text-align: center;
 }
 
-
-
 .navlink{
   color: black;
   border: 2px solid black;
   padding: 5px 10px 5px 10px;
-  margin: 0 25px 25px 25px; 
+  margin: 0 15px 15px 15px; 
   border-radius: 5px;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  background: rgb(0, 187, 250);
+}
+
+.navlinkHalo{
+  color: black;
+  border: 2px solid black;
+  padding: 5px 10px 5px 10px;
+  margin: 0 15px 15px 15px; 
+  border-radius: 5px;
+  font-size: .7rem; 
+  text-decoration: none;
+  font-weight: bold;
   background: rgb(0, 187, 250);
 }
 
 .navlink:hover{
-  color: white;
+  /* color: white; */
+  background: rgb(0, 250, 229);
+}
+
+.navlinkHalo:hover{
+  /* color: white; */
+  background: rgb(0, 250, 229);
+  
 }
 
 nav{
   display: flex;
   justify-content: center;
 }
-/* HALO.JS */
+
+.routes{
+  margin-top: 20px;
+}
+
+/*/////////////////////////////////////////////////*/
+/*///////  HALO RANK  ////////////////////////////*/
+/*///////////////////////////////////////////////*/
 
 /* .Halo_Rank_Container{
   background: lightblue;
 } */
 
 /* .Ranks{
-  display:flex;
+  display: flex;
+  margin-bottom: 5px;
   border: 2px solid red;
 } */
 
-/* HALO RANK.JS */
+/*///////////////////////////////////////////*/
+/*///////  HALO RANK CARD //////////////////*/
+/*/////////////////////////////////////////*/
 
-.names{
-  /* display: flex; */
-  /* flex-direction: column; */
-  border: 2px solid black;
+
+h2{
+  padding-right: 12px;
 }
 
-
-.Banner{
-  /* display: flex; */
-  width: 200px;
+/* .Banner{
+  width: 75px;
   height: auto; 
   border: 2px solid black;
-}
-.Tier{
-  /* display: flex;
-  flex-direction: column; */
-  width: 100px;
-  height: auto;
-  border: 2px solid black;
+} */
+
+
+.TierHolder{
+  display: flex;
+  justify-content: center;
+
 }
 
-/* HOME PAGE - react logo */
+.Tier{
+  /* display: flex; */
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  width: 75px;
+  /* height: auto; */
+  border: 2px solid black;
+  margin: 4px;
+}
+
+/*///////////////////////////////////////////*/
+/*///////  HALO MAPS     ///////////////////*/
+/*/////////////////////////////////////////*/
+
+.MapContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Mapcard{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border: 2px solid black;
+  width: 300px;
+  height: auto; 
+  margin: 5px;
+}
+
+.MapImage{
+  width: 300px;
+  height: auto; 
+}
+
+
+
+
+
+/*///////////////////////////////////////////*/
+/*///////  INPUT SEARCH FORM   ////////////*/
+/*/////////////////////////////////////////*/
+
+.search-form{
+  margin: 25px 0 25px 0;
+}
+.input{
+  padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*///////////////////////////////////////////*/
+/*///////  HOME PAGE    ////////////////////*/
+/*/////////////////////////////////////////*/
 
 .App-logo {
   height: 40vmin;

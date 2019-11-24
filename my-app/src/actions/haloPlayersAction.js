@@ -1,25 +1,44 @@
 import axios from 'axios';
+import React, {useState} from "react";
 import axiosWithAuth from "../utils/axiosWithAuth";
 export const FETCHING_INFO_HALO_PLAYER = "FETCHING_INFO_HALO_PLAYER"
 export const FETCHING_FAIL_HALO_PLAYER = "FETCHING_FAIL_HALO_PLAYER"
 export const FETCHING_INFO_HALO_SUCESS_PLAYER = 'FETCHING_INFO_HALO_SUCESSPLAYER'
 
-export const getHaloPlayer = () => dispatch => {
-    dispatch({type: FETCHING_INFO_HALO_PLAYER});
-     axiosWithAuth()
-    //PLAYER STATS 
-    .get ('stats/h5/servicerecords/arena?players={players}') 
-    //{players}[&seasonId]
-    //.get ('https://www.haloapi.com/metadata/h5/metadata/maps')
-    .then(res => {
-        console.log(res.data,'player info')
-        dispatch({type: FETCHING_INFO_HALO_SUCESS_PLAYER, payload: res.data})
-    })
-    .catch(err => {
-        console.log(err)
-        dispatch({
-            type: FETCHING_FAIL_HALO_PLAYER ,
-            payload: err.response
+
+
+export const getHaloPlayerA = () => dispatch => {
+
+    
+
+    const players = [
+            'Xtianumbra',
+            'Etherblades89',
+    ]
+       
+
+        dispatch({type: FETCHING_INFO_HALO_PLAYER});
+         axiosWithAuth()
+            //.get (`stats/h5/servicerecords/arena?players=Xtianumbra`) 
+        .get (`stats/h5/servicerecords/arena?players=${players}`) 
+        //{players}[&seasonId]
+        .then(res => {
+            dispatch({type: FETCHING_INFO_HALO_SUCESS_PLAYER, payload: res.data.Results})
+           console.log(res.data.Results,'Haloplayers action')
+
+        //    res.data.Results.filter(p =>
+        //     p.players.toLowerCase().includes(query.toLowerCase()))
+        })
+        .catch(err => {
+            console.log(err)
+            dispatch({
+                type: FETCHING_FAIL_HALO_PLAYER ,
+                payload: err.response
+            });
         });
-    });
-};
+
+}    
+
+
+
+

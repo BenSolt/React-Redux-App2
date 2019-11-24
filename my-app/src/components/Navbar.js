@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-export default function Navig() {
+export default function Navbar() {
 
     return(
 
@@ -9,12 +9,14 @@ export default function Navig() {
 
             <div>
                 <NavLink className='navlink' to='/'>HOME</NavLink>
-            </div>
+                <NavLink className='navlink' to='/halo'>HALO</NavLink>
+                <NavLink className='navlink' to='/default'>DEFAULT</NavLink>
+                <NavLink className='navlink' to='/search'>Search</NavLink>
 
-            <div>
-                <NavLink className='navlink' to='/dogs'>DOGS</NavLink>
-                <NavLink className='navlink' to='/halo'>HALO RANKS</NavLink>
+                {/* <NavLink className='navlink' to='/dogs'>DOGS</NavLink> */}
+                {/* <NavLink className='navlink' to='/halorank'>HALO RANKS</NavLink>
                 <NavLink className='navlink' to='/haloplayers'>HALO PLAYERS</NavLink>
+                <NavLink className='navlink' to='/halomaps'>HALO MAPS</NavLink> */}
             </div>
 
         </nav>
