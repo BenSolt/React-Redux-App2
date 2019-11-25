@@ -16,6 +16,7 @@ import HaloRank from './components/haloRanks/HaloRank';
 import HaloPlayer from './components/haloPlayers/HaloPlayer';
 import HaloMaps from './components/haloMaps/HaloMaps';
 import HaloMedals from './components/haloMedals/HaloMedals';
+import HaloPlayerB from './components/haloPlayers/HaloPlayerB';
 
 //NAV BAR
 import Navbar from './components/navbar/Navbar';
@@ -44,6 +45,8 @@ function App() {
       <Route path="/haloplayers" component={HaloPlayer} />
       <Route path="/halomaps" component={HaloMaps}/>
       <Route path="/halomedals" component={HaloMedals}/>
+
+      <Route path="/haloplayers2" component={HaloPlayerB} />
       </div>
       
     </div>

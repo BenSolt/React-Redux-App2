@@ -39,27 +39,42 @@ export default function HaloPlayerCard({p}) {
        
 
           <div className='Gamertag'>
-            <h2>GamerTag: {p.Id}</h2>
+            <h1>GamerTag: {p.Id}</h1>
           </div>
          
           <div className="Info">
-            <h3>Experience Rank: {p.Result.SpartanRank}</h3> 
-            <h3>Highest Rank: {HighestRankAttained}</h3>
+            <h3>Experience Rank:</h3><h3>{p.Result.SpartanRank}</h3>
+            <h3>Highest Rank:</h3> <h3>{HighestRankAttained}</h3>
 
           
 
           </div>
 
           <div className="Stats1">
-              <h4>GamesWon: {GamesWon}</h4>
-              <h4>GamesLost: {GamesLost}</h4>
-              <h4>GamesTied: {GamesTied}</h4>
-              <h4>Deaths: {Deaths}</h4>
+              <div className='Textholder'>
+                <h4>GAMES WON</h4><h5 className="h5A">{GamesWon}</h5>
+              </div> 
+              <div className='Textholder'>
+                <h4>GAMES LOST</h4> <h5 className="h5A">{GamesLost}</h5>
+              </div>
+              <div className='Textholder'>
+                <h4>GAMES TIED</h4> <h5 className="h5A">{GamesTied}</h5>
+              </div>
+              <div className='Textholder'>
+                <h4>DEATHS</h4> <h5 className="h5A">{Deaths}</h5>
+              </div>
           </div>
+          
           <div className="Stats2">
-              <h4>Total kills: {TotalKillsPlayer}</h4>
-              <h4>Assasinations: {Assasinations}</h4>
-              <h4>Assists: {Assists}</h4>
+              <div className='Textholder'>
+                <h4>TOTAL KILLS</h4> <h5 className="h5B">{TotalKillsPlayer}</h5>
+              </div>
+              <div className='Textholder'>
+                <h4>ASSASINATIONS</h4> <h5 className="h5B">{Assasinations}</h5>
+              </div>
+              <div className='Textholder'>
+                <h4>ASSISTS</h4> <h5 className="h5B">{Assists}</h5>
+              </div>       
           </div>
 
           

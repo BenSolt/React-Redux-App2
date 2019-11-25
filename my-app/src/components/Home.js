@@ -52,7 +52,7 @@ export default function Home() {
               {/* <canvas id="gameScreen"></canvas> */}
 
               <img  id="imagg" src={Imagee} />
-              <img id='test' src={Imagee}/>
+              {/* <img id='test' src={Imagee}/> */}
               <span className="sprite ie"></span>
               
               

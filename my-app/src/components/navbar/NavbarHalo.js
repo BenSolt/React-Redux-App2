@@ -12,8 +12,12 @@ export default function NavbarHalo(props) {
             <nav>
                 <NavLink className='navlinkHalo' to='/halorank'>HALO RANKS</NavLink>
                 <NavLink className='navlinkHalo' to='/haloplayers'>HALO PLAYERS</NavLink>
+
+                <NavLink className='navlinkHalo' to='/haloplayers2'>HALO PLAYERS2</NavLink>
+
                 <NavLink className='navlinkHalo' to='/halomaps'>HALO MAPS</NavLink>
                 <NavLink className='navlinkHalo' to='/halomedals'>HALO MEDALS</NavLink>
+                
             </nav> 
 
             {/* <div className='search-form'>

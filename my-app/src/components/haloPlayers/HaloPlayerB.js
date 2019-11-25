@@ -1,54 +1,55 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
+//import axios from "axios";
+import axiosWithAuth from "../../utils/axiosWithAuth";
 
-export default function Characters() {
+import HaloPlayerCard from "./HaloPlayerCard";
+
+export default function Players2() {
+
+  const players = [
+    'Xtianumbra',
+    'Etherblades89',
+]
+
   const [data, setData] = useState([]);
   const [query, setQuery] = useState("");
+
   useEffect(() => {
-    axios
-      //.get(`https://www.potterapi.com/v1/characters/`)
-      .then(response => {
-        const data = response.data.filter(character =>
-          character.name.toLowerCase().includes(query.toLowerCase())
-        );
-        console.log("harry potter characters", data);
-        setData(data);
+    axiosWithAuth()
+      .get (`stats/h5/servicerecords/arena?players=${players}`) 
+      .then(res => {
+        // const info = res.data.Results
+        const info = res.data.Results.filter(p =>
+           p.Id.toLowerCase().includes(query.toLowerCase())
+         );
+        console.log(res.data.Results);
+        setData(info);
       });
   }, [query]);
   const handleInputChange = event => {
     setQuery(event.target.value);
   };
   return (
-    <div className="spells">
-      <form className="search">
-        <input
-          type="text"
-          onChange={handleInputChange}
-          value={query}
-          name="name"
-          tabIndex="0"
-          className="prompt search-name"
-          placeholder="search by name"
-          autoComplete="off"
-        />
-      </form>
-      <div className="spell">
-        {data.map(data => {
-          return (
-            <div className="character-list " key={data._id}>
-              <h2>
-                <span aria-label="witch" role="img">
-                  🧙
-                </span>
-                {data.name}
-              </h2>
-              <h3 className="capital">Role: {data.role}</h3>
-              <h3 className="capital">House: {data.house}</h3>
-              <h3 className="capital">Wand: {data.wand}</h3>
-              <h3 className="capital">Patronus: {data.patronus}</h3>
-              <h3 className="capital">Blood Status: {data.bloodStatus}</h3>
-            </div>
-          );
+    <div>
+      <div className="Searchbar" >
+          <h3>Search Player:</h3>
+        <form>
+          <input className="Input"
+            type="text"
+            onChange={handleInputChange}
+            value={query}
+            name="name"
+            //tabIndex="0"
+            placeholder="Search player"
+            autoComplete="off"
+          />
+        </form>
+      </div>
+    <div>
+        {data.map(p => {
+         
+              return < HaloPlayerCard key={p.Id} p={p}/>
+        
         })}
       </div>
     </div>
