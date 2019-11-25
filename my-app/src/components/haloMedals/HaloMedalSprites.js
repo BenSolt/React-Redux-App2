@@ -7,7 +7,6 @@ let ctx = canvas.getContext("2d");
 function SpriteSheet() {
     
     let img = new Image();
-    //img.src = 'https://opengameart.org/sites/default/files/Green-Cap-Character-16x18.png';
     
     img.onload = function() {
       init();
@@ -34,7 +33,7 @@ function SpriteSheet() {
     <h4>Draw individual sprites from a spritesheet</h4>
           <h1>TEST</h1>
           <canvas id="gameScreen" width='100' height='100' border='2px solid black'/>
-            <img src={spaceship}/>
+            
             
              </div>
       );

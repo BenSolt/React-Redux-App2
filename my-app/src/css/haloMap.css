@@ -1,0 +1,21 @@
+.MapContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .Mapcard{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    width: 280px;
+    height: auto; 
+    margin: 10px;
+    background: white;
+  }
+  
+  .MapImage{
+    width: 280px;
+    height: auto; 
+  }

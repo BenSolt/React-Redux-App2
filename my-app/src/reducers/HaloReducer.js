@@ -1,11 +1,11 @@
-import {FETCHING_INFO_HALO, FETCHING_FAIL_HALO, FETCHING_INFO_HALO_SUCESS} from '../actions/haloAction';
+import {FETCHING_INFO_HALO, FETCHING_FAIL_HALO, FETCHING_INFO_HALO_SUCESS} from '../actions/haloRankAction';
 import {FETCHING_INFO_HALO_PLAYER,FETCHING_FAIL_HALO_PLAYER,FETCHING_INFO_HALO_SUCESS_PLAYER} from '../actions/haloPlayersAction';
 import {FETCHING_INFO_HALO_MAP, FETCHING_FAIL_HALO_MAP, FETCHING_INFO_HALO_SUCESS_MAP} from '../actions/haloMapAction';
 import {FETCHING_INFO_HALO_MEDAL, FETCHING_FAIL_HALO_MEDAL, FETCHING_INFO_HALO_SUCESS_MEDAL} from '../actions/haloMedalAction';
 
 const initialState = {
     halodataM:[],
-    halodata: [],
+    halodataR: [],
     halodataP: [],
     halodataMedal:[],
     message: null,
@@ -29,7 +29,7 @@ switch (action.type) {
         case FETCHING_INFO_HALO_SUCESS:
         return {
             ...state,
-            halodata: action.payload,
+            halodataR: action.payload,
             isFetching: false, 
             error: ''
         };

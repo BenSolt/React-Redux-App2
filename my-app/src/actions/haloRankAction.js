@@ -4,7 +4,7 @@ export const FETCHING_INFO_HALO = "ETCHING_INFO_HALO"
 export const FETCHING_FAIL_HALO = "FETCHING_FAIL_HALO"
 export const FETCHING_INFO_HALO_SUCESS = 'FETCHING_INFO_HALO_SUCESS'
 
-export const getHaloA = () => dispatch => {
+export const getHaloRankA = () => dispatch => {
     dispatch({type: FETCHING_INFO_HALO});
       //axios
      axiosWithAuth()

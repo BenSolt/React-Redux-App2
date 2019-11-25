@@ -4,10 +4,11 @@ import { NavLink } from "react-router-dom";
 export default function Navbar() {
 
     return(
-
-        <nav>
-
-            <div>
+        
+    <div className='Navbarholder'>
+        
+        <div>
+            <nav>
                 <NavLink className='navlink' to='/'>HOME</NavLink>
                 <NavLink className='navlink' to='/halo'>HALO</NavLink>
                 <NavLink className='navlink' to='/default'>DEFAULT</NavLink>
@@ -17,8 +18,7 @@ export default function Navbar() {
                 {/* <NavLink className='navlink' to='/halorank'>HALO RANKS</NavLink>
                 <NavLink className='navlink' to='/haloplayers'>HALO PLAYERS</NavLink>
                 <NavLink className='navlink' to='/halomaps'>HALO MAPS</NavLink> */}
-            </div>
-
-        </nav>
-
+            </nav>
+        </div>
+    </div>
     )}

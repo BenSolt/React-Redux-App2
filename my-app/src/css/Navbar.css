@@ -1,0 +1,51 @@
+.Navbarholder {
+    padding: 12px;
+    background: black; 
+}
+
+.Navbarholderhalo {
+    padding: 7px;
+    background: grey;  
+}
+
+.navlink{
+    color: white;
+    /* border: 2px solid black; */
+    padding: 10px 15px 10px 15px;
+    margin: 0 15px 0 15px; 
+    border-radius: 5px;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    background:  rgb(0, 78, 180);
+}
+
+.navlinkHalo{
+    color: white;
+    /* border: 2px solid black; */
+    padding: 10px 12px 10px 12px;
+    margin: 0 15px 0px 15px; 
+    border-radius: 5px;
+    font-size: .6rem; 
+    text-decoration: none;
+    font-weight:bold;
+    background: rgb(0, 78, 180);
+}
+
+.navlink:hover{
+    /* color: white; */
+    background: rgb(0, 129, 250);
+}
+
+.navlinkHalo:hover{
+    /* color: white; */
+    background: rgb(0, 129, 250);
+  
+}
+
+
+nav{
+    display: flex;
+    justify-content: center;
+}
+

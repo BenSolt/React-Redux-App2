@@ -9,7 +9,8 @@ export const FETCHING_INFO_HALO_SUCESS_PLAYER = 'FETCHING_INFO_HALO_SUCESSPLAYER
 
 export const getHaloPlayerA = () => dispatch => {
 
-    
+    // const [data, setData] = useState([]);
+    // const [query, setQuery] = useState("");
 
     const players = [
             'Xtianumbra',

@@ -1,50 +1,10 @@
 .App {
   text-align: center;
-}
-
-.navlink{
-  color: black;
-  border: 2px solid black;
-  padding: 5px 10px 5px 10px;
-  margin: 0 15px 15px 15px; 
-  border-radius: 5px;
-  font-size: 1rem;
-  text-decoration: none;
-  font-weight: bold;
-  background: rgb(0, 187, 250);
-}
-
-.navlinkHalo{
-  color: black;
-  border: 2px solid black;
-  padding: 5px 10px 5px 10px;
-  margin: 0 15px 15px 15px; 
-  border-radius: 5px;
-  font-size: .7rem; 
-  text-decoration: none;
-  font-weight: bold;
-  background: rgb(0, 187, 250);
-}
-
-.navlink:hover{
-  /* color: white; */
-  background: rgb(0, 250, 229);
-}
-
-.navlinkHalo:hover{
-  /* color: white; */
-  background: rgb(0, 250, 229);
+  background-color: #282c34;
+  min-height: 85vh;
   
 }
 
-nav{
-  display: flex;
-  justify-content: center;
-}
-
-.routes{
-  margin-top: 20px;
-}
 
 /*/////////////////////////////////////////////////*/
 /*///////  HALO RANK  ////////////////////////////*/
@@ -90,31 +50,7 @@ h2{
   /* height: auto; */
   border: 2px solid black;
   margin: 4px;
-}
-
-/*///////////////////////////////////////////*/
-/*///////  HALO MAPS     ///////////////////*/
-/*/////////////////////////////////////////*/
-
-.MapContainer{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.Mapcard{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  border: 2px solid black;
-  width: 300px;
-  height: auto; 
-  margin: 5px;
-}
-
-.MapImage{
-  width: 300px;
-  height: auto; 
+  background: white;
 }
 
 
@@ -141,7 +77,6 @@ h2{
 
 
 
-
 /*///////////////////////////////////////////*/
 /*///////  HOME PAGE    ////////////////////*/
 /*/////////////////////////////////////////*/
@@ -152,7 +87,7 @@ h2{
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 85vh;
   display: flex;
   flex-direction: column;
   align-items: center;

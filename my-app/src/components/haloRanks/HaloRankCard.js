@@ -19,7 +19,7 @@ export default function HaloRank({h}) {
                return (
                 <div> 
                   <img className="Tier" src={h.iconImageUrl} />
-                  {/* <h2 >{h.id}</h2>  */}
+                  
                 </div> 
                )
           })}

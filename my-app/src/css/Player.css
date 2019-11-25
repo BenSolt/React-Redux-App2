@@ -1,0 +1,52 @@
+.PlayerCard{
+    width: 400px;
+    border: 3px solid black;
+    background: rgb(61, 61, 61);
+    margin: 20px;
+    
+}
+
+.Gamertag{
+    background: gold;
+    padding: 5px;
+    border-bottom: 3px solid black;
+}
+
+
+.Info{
+    display: flex;
+    background: rgb(204, 133, 0);
+    justify-content: space-evenly;
+    border-bottom: 2px solid black;
+}
+
+.Stats1{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Stats2{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+   
+
+    h4{
+    color: white;
+    }
+
+/*////////////////// SEARCH BAR ///////////////////////////////////////*/
+
+.Searchbar{
+    display: flex;
+    justify-content: center;
+  
+}
+.Input{
+    margin: 20px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 15px;
+}

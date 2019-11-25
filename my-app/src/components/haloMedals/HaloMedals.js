@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { connect } from 'react-redux';
-import {getHaloMedalsA} from '../actions/haloMedalAction';
+import {getHaloMedalsA} from '../../actions/haloMedalAction';
 
 import HaloMedalCard from "./HaloMedalCard";
-import NavbarHalo from '../components/NavbarHalo';
+import NavbarHalo from '../navbar/NavbarHalo';
 
 const HaloMedals = ({ getHaloMedalsA, halodataMedal, isFetching, error}) => {
 
@@ -14,7 +14,7 @@ const HaloMedals = ({ getHaloMedalsA, halodataMedal, isFetching, error}) => {
     }, [getHaloMedalsA]);
 
     if (isFetching) {
-        return <h1>fetching Data!</h1>;
+        return <h1>Loading data...</h1>;
     }else{
    
     

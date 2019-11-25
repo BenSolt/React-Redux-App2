@@ -1,20 +1,25 @@
 import React from 'react';
-//import logo from './logo.svg';
-import './App.css';
+
+import './css/App.css';
+import './css/home.css';
+import './css/medals.css';
+import './css/Navbar.css';
+import './css/Player.css';
+import './css/haloMap.css';
 
 //MY IMPORTS
 import Home from './components/Home';
 import Test from './components/Test';
 import Default from './components/Default';
 import Dogs from './components/Dogs';
-import HaloRank from './components/HaloRank';
-import HaloPlayer from './components/HaloPlayer';
-import HaloMaps from './components/HaloMaps';
-import HaloMedals from './components/HaloMedals';
+import HaloRank from './components/haloRanks/HaloRank';
+import HaloPlayer from './components/haloPlayers/HaloPlayer';
+import HaloMaps from './components/haloMaps/HaloMaps';
+import HaloMedals from './components/haloMedals/HaloMedals';
 
 //NAV BAR
-import Navbar from './components/Navbar';
-import NavbarHalo from './components/NavbarHalo';
+import Navbar from './components/navbar/Navbar';
+import NavbarHalo from './components/navbar/NavbarHalo';
 
 import { Route } from "react-router-dom";
 import SearchForm from './components/PlayerSearchForm';
@@ -23,11 +28,12 @@ import SearchForm from './components/PlayerSearchForm';
 
 function App() {
   return (
+
     <div className="App">
-      <h1>HALO INFO</h1>
-      <Navbar />
      
-      <div className='routes'>
+        <Navbar />  
+      
+      <div>
       <Route exact path="/" component={Home}/>
       {/* <Route exact path="/" component={Test}/> */}
       <Route path="/search" component={SearchForm}/>
@@ -41,6 +47,7 @@ function App() {
       </div>
       
     </div>
+
   );
 }
 

@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 
 const players = [
-    {name:'Xtianumbra'},
-    {name:'Etherblades89'},
+    // {name:'Xtianumbra'},
+    // {name:'Etherblades89'},
     
   ]
 
@@ -23,10 +23,7 @@ class App extends Component {
       <div className="col-md-3" style={{ marginTop: "20px" }}>
         <div>
           <div>
-            <p className="">
-              
-              
-            </p>
+           
             <h1 title={player.name}>
               {player.name.substring(0, 15)}
               {player.name.length > 15 && "..."}
@@ -48,31 +45,23 @@ class App extends Component {
     });
 
     return (
-      <div className="flyout">
-        <main style={{ marginTop: "4rem" }}>
-          <div className="container">
-            <div className="row">
-              <div className="col-12">
-                
-
-              </div>
-              <div className="col">
-                <input
+      <div>
+            <div>
+              <div className="Searchbar" >
+              <h3>Search Player:</h3>
+            
+                <input className="Input"
                   label="Search player"
                   icon="search"
                   onChange={this.onchange}
                 />
               </div>
-              <div className="col" />
-            </div>
-            <div className="row">
+            <div>
               {filterPlayers.map(player => {
                 return this.renderPlayer(player);
               })}
             </div>
-          </div>
-        </main>
-        
+          </div>   
       </div>
     );
   }

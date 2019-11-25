@@ -1,31 +1,44 @@
 import React, { useState, useEffect } from 'react';
 import { connect } from 'react-redux';
-import {getHaloPlayerA} from '../actions/haloPlayersAction';
-import NavbarHalo from '../components/NavbarHalo';
+import {getHaloPlayerA} from '../../actions/haloPlayersAction';
+
+
+
+import NavbarHalo from '../navbar/NavbarHalo';
 
 import HaloPlayerCard from "./HaloPlayerCard";
 
+
+import PlayerSearchForm from '../PlayerSearchForm';
+
 const HaloPlayer = ({ getHaloPlayerA, halodataP, isFetching, error}) => {
 
-    const [query, setQuery] = useState("");
+    
+    // const aRank = halodata.filter(str => (str.name === "Bronze"))
+
+    //const [query, setQuery] = useState("");
 
     useEffect((halodataP) => {
         getHaloPlayerA();
-     
+        
     }, [getHaloPlayerA]);
 
     if (isFetching) {
         
-        return <h1>fetching Data!2</h1>;
+        return <h1>Loading data...</h1>;
     }else{
         
     return (
         // 
             <div>
                 <NavbarHalo/>
-                 <h2>Halo Players</h2>
-    
-
+                <div>
+                <PlayerSearchForm/> 
+                </div>
+                 
+                 {/* {aRank.map(h => {
+                  return < HaloRankCard key={h.id} h={h} />
+                })} */}
 
                  {halodataP.map(p => {
                     return < HaloPlayerCard key={p.Id} p={p}/>
@@ -42,10 +55,10 @@ const HaloPlayer = ({ getHaloPlayerA, halodataP, isFetching, error}) => {
 const mapStateToProps = state => {
 //   console.log(state.halodataP)
   return {
-      
-      halodataP: state.halodataP,
-      isFetching: state.isFetching,
-      error: state.error
+   
+    halodataP: state.halodataP,
+    isFetching: state.isFetching,
+    error: state.error
   };
 };
 

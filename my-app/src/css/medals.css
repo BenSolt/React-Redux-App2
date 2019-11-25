@@ -1,0 +1,11 @@
+.sprite1 {
+    
+    /* background: url('logo.svg'); */
+    border: 2px solid black;
+}
+.medal {
+    width: 74px; 
+    height: 74px; 
+    display: inline-block;
+    background-position: 0 256px; 
+}

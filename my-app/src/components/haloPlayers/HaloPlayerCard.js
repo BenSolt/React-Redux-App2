@@ -1,9 +1,10 @@
 import React from "react";
-import '../Player.css';
+
 
 
 export default function HaloPlayerCard({p}) {
 
+  
 
                     const TotalKillsV = 
               p.Result.ArenaStats.DestroyedEnemyVehicles.map(p => {
@@ -20,8 +21,8 @@ export default function HaloPlayerCard({p}) {
 
                     const Assasinations =
                     p.Result.ArenaStats.TotalAssassinations
-                    const Assits =
-                    p.Result.ArenaStats.TotalAssits
+                    const Assists =
+                    p.Result.ArenaStats.TotalAssists
                     const Deaths =
                     p.Result.ArenaStats.TotalDeaths
 
@@ -36,19 +37,33 @@ export default function HaloPlayerCard({p}) {
     return (
       <div className="PlayerCard">
        
-         <div className='Gamertag'>
-           <h3>GamerTag: {p.Id}</h3>
-         </div>
-         
-         
-          <h4>Experience Rank: {p.Result.SpartanRank}</h4> 
-          <h4>Highest Rank: {HighestRankAttained}</h4>
-          <h4>Total kills: {TotalKillsPlayer}</h4>
 
-          <h4>Total kills: {TotalKillsPlayer}</h4>
+          <div className='Gamertag'>
+            <h2>GamerTag: {p.Id}</h2>
+          </div>
          
-            {/* <h6>Total kills Vehic:{TotalKillsV}</h6> */}
-            
+          <div className="Info">
+            <h3>Experience Rank: {p.Result.SpartanRank}</h3> 
+            <h3>Highest Rank: {HighestRankAttained}</h3>
+
+          
+
+          </div>
+
+          <div className="Stats1">
+              <h4>GamesWon: {GamesWon}</h4>
+              <h4>GamesLost: {GamesLost}</h4>
+              <h4>GamesTied: {GamesTied}</h4>
+              <h4>Deaths: {Deaths}</h4>
+          </div>
+          <div className="Stats2">
+              <h4>Total kills: {TotalKillsPlayer}</h4>
+              <h4>Assasinations: {Assasinations}</h4>
+              <h4>Assists: {Assists}</h4>
+          </div>
+
+          
+          {/* <h6>Total kills Vehic:{TotalKillsV}</h6> */}
       </div>
 
     )

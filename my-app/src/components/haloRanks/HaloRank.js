@@ -1,22 +1,22 @@
 import React, { useState, useEffect } from 'react';
 import { connect } from 'react-redux';
-import {getHaloA} from '../actions/haloAction';
+import {getHaloRankA} from '../../actions/haloRankAction';
 import HaloRankCard from "./HaloRankCard";
-import NavbarHalo from '../components/NavbarHalo';
+import NavbarHalo from '../navbar/NavbarHalo';
 
-const Home = ({ getHaloA, halodata, isFetching, error}) => {
+const Home = ({ getHaloRankA, halodataR, isFetching, error}) => {
 
 
-const aRank = halodata.filter(str => (str.name === "Bronze"))
+const aRank = halodataR.filter(str => (str.name === "Bronze"))
 
 //const [hrank,setHrank] = useState([]);
 
-    useEffect((halodata) => {
-        getHaloA();
-    }, [getHaloA]);
+    useEffect((halodataR) => {
+        getHaloRankA();
+    }, [getHaloRankA]);
 
     if (isFetching) {
-        return <h1>fetching Data!</h1>;
+        return <h1>Loading data...</h1>;
     }else{
    
     return (
@@ -26,7 +26,7 @@ const aRank = halodata.filter(str => (str.name === "Bronze"))
         <h2>Halo Ranks</h2>
         <div className='Ranks'>
         
-    {/* {halodata.map(h => { */}
+   
        {aRank.map(h => {
         
         return < HaloRankCard key={h.id} h={h} />
@@ -45,7 +45,7 @@ const mapStateToProps = state => {
     // console.log(state.halodata)
     return {
         
-        halodata: state.halodata,
+        halodataR: state.halodataR,
         isFetching: state.isFetching,
         error: state.error
     };
@@ -53,6 +53,6 @@ const mapStateToProps = state => {
 
 export default connect(
     mapStateToProps,
-    {getHaloA}
+    {getHaloRankA}
 )(Home);
 
