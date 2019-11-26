@@ -18,18 +18,19 @@ export default function Navbar() {
         
     <div className='Navbarholder'>
         
-        <div className='test'>
+        <div className='flexnav'>
         <img className='logo' src={MyLogo}/>
 
             <nav className='navlinkholder'>
                
                 <NavLink className='navlink' to='/'>HOME</NavLink>
+                <NavLink className='navlink2' to='/projects'>PROJECTS</NavLink> 
+                <NavLink className='navlink2' to='/artwork'>ARTWORK</NavLink> 
                 <NavLink className='navlink' to='/halo'>HALO</NavLink>
-                <NavLink className='navlink' to='/default'>DEFAULT</NavLink>
-                <NavLink className='navlink2' to='/search'>Search</NavLink> 
+                 {/* <NavLink className='navlink' to='/default'>DEFAULT</NavLink> */}
            
             </nav>
-
+            <h5 className="navtext">Darkmode</h5>
             <div className="navbar2">
                 <div className="dark-mode__toggle">
                     <div

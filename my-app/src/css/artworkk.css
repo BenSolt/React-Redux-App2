@@ -1,0 +1,11 @@
+
+.imagecontainer{
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+.myImgs{
+height:auto;
+width: 256px;
+}

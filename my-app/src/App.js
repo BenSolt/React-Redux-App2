@@ -16,6 +16,8 @@ import HaloPlayer from './components/haloPlayers/HaloPlayer';
 import HaloMaps from './components/haloMaps/HaloMaps';
 import HaloMedals from './components/haloMedals/HaloMedals';
 import HaloPlayerB from './components/haloPlayers/HaloPlayerB';
+import Artwork from './components/Artwork';
+import Codework from './components/codework';
 
 //NAV BAR
 import Navbar from './components/navbar/Navbar';
@@ -35,7 +37,8 @@ function App() {
       
       <div>
       <Route exact path="/" component={Home}/>
-      {/* <Route path="/search" component={SearchForm}/> */}
+      <Route path="/projects" component={Codework}/>
+      <Route path="/artwork" component={Artwork}/>
       <Route exact path="/halo" component={NavbarHalo}/>
       <Route path="/default" component={Default}/>
       {/* <Route path="/dogs" component={Dogs}/> */}
@@ -45,6 +48,8 @@ function App() {
       <Route path="/halomedals" component={HaloMedals}/>
 
       <Route path="/haloplayers2" component={HaloPlayerB} />
+
+
       </div>
       
     </div>

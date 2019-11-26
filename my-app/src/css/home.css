@@ -17,14 +17,57 @@
     border: 2px solid black;    
 }
 
-
 #gameScreen {
     border: 2px solid black;
 }
 
-/* .textwhite{
-    color: white;
-} */
+.margintext{
+    margin: 1px 0 0 0;
+}
+
 .textgold{
     color: rgb(204, 133, 0);
 }
+
+/* ABOUT ME - Section 1 */
+.mainbox{
+    margin: 0 3% 0 3%;
+    /* border: 2px solid black; */
+}
+
+/* IMAGE BEN AND KAYLEE */
+.section1{
+display:flex;
+/* border: 2px solid red; */
+}
+
+.name{
+    display:flex; 
+    /* border: 2px solid blue;  */
+}
+
+.imgBenKaylee{
+    height:auto;
+    width: 300px;
+}
+/* END BEN AND KAYLEE */
+
+.textholder1{
+    display:flex;  
+    padding: 0 20px 0 20px;
+    /* border: 2px solid green; */
+}
+
+.section2{
+    display:flex;
+    justify-content: center;
+}
+
+.contactbox{
+    margin: 0 3% 0 3%;
+}
+
+.skillbox{
+    margin: 0 3% 0 3%;
+}
+
