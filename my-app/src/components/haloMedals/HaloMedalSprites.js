@@ -13,7 +13,7 @@ function SpriteSheet() {
     };
     
     
-    const scale = 3;
+    const scale = 1;
     const width = 16;
     const height = 18;
     const scaledWidth = scale * width;

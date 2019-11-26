@@ -4,7 +4,7 @@ export default function Navig() {
 
     return(
 
-        <header className="App-header">
+        <header>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.

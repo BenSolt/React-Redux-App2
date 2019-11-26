@@ -9,14 +9,15 @@ export default function Players2() {
   const players = [
     'Xtianumbra',
     'Etherblades89',
-    'mdsolt',
-    'muscleman0927',
-    'PaulSolt',
-    'TomASck',
-    'ImagelessBean',
-    'DePal912',
-    'Killgear',
-    'VeteranFerret58',
+    // 'mdsolt',
+    // 'muscleman0927',
+    // 'PaulSolt',
+    // 'TomASck',
+    // 'ImagelessBean',
+    // 'DePal912',
+    // 'Killgear',
+    // 'VeteranFerret58',
+
 
     'ACA AC3',
     'AT WILL 2703',
@@ -30,10 +31,10 @@ export default function Players2() {
     'TheMastaChamp',
     'Wife H8s Halo',
     'XD marman',
-    'So HELP ME GOD',
+    'S0 HELP ME GOD',
     'goopboy123',
     'MATRICKX',
-
+    // 'primelos'
     
 
 ]
@@ -41,6 +42,8 @@ export default function Players2() {
   const [data, setData] = useState([]);
   const [query, setQuery] = useState("");
 
+
+    
   useEffect(() => {
     axiosWithAuth()
       .get (`stats/h5/servicerecords/arena?players=${players}`) 
@@ -53,6 +56,8 @@ export default function Players2() {
         setData(info);
       });
   }, [query]);
+
+
   const handleInputChange = event => {
     setQuery(event.target.value);
   };

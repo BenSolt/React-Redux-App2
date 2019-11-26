@@ -12,8 +12,7 @@ import HaloPlayerCard from "./HaloPlayerCard";
 import PlayerSearchForm from '../PlayerSearchForm';
 
 const HaloPlayer = ({ getHaloPlayerA, halodataP, isFetching, error}) => {
-
-    
+  
     // const aRank = halodata.filter(str => (str.name === "Bronze"))
 
     //const [query, setQuery] = useState("");

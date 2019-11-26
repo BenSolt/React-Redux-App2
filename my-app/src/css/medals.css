@@ -3,9 +3,24 @@
     /* background: url('logo.svg'); */
     border: 2px solid black;
 }
-.medal {
-    width: 74px; 
-    height: 74px; 
-    display: inline-block;
-    background-position: 0 256px; 
+.carrierprotected {
+    object-Position: -518px -148px;
+    /* left 518 top 148 */
+    height: 74px;
+    width: 74px;  
+    border: 2px solid black;   
+}
+
+.carrierKill {
+    object-position: 518px, 148px;
+    
+}
+
+.killspree {
+    /* object-Position: -518px -148px; */
+    object-Position: -1924px -74px;
+    /* left 1924 top 74 */
+    height: 74px;
+    width: 74px;  
+    border: 2px solid black;   
 }

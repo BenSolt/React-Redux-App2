@@ -52,28 +52,28 @@ export default function HaloPlayerCard({p}) {
 
           <div className="Stats1">
               <div className='Textholder'>
-                <h4>GAMES WON</h4><h5 className="h5A">{GamesWon}</h5>
+                <h4 className='textgold'>GAMES WON</h4><h5 className="h5A">{GamesWon}</h5>
               </div> 
               <div className='Textholder'>
-                <h4>GAMES LOST</h4> <h5 className="h5A">{GamesLost}</h5>
+                <h4 className='textgold'>GAMES LOST</h4> <h5 className="h5A">{GamesLost}</h5>
               </div>
               <div className='Textholder'>
-                <h4>GAMES TIED</h4> <h5 className="h5A">{GamesTied}</h5>
+                <h4 className='textgold'>GAMES TIED</h4> <h5 className="h5A">{GamesTied}</h5>
               </div>
               <div className='Textholder'>
-                <h4>DEATHS</h4> <h5 className="h5A">{Deaths}</h5>
+                <h4 className='textgold'>DEATHS</h4> <h5 className="h5A">{Deaths}</h5>
               </div>
           </div>
           
           <div className="Stats2">
               <div className='Textholder'>
-                <h4>TOTAL KILLS</h4> <h5 className="h5B">{TotalKillsPlayer}</h5>
+                <h4 className='textgold'>TOTAL KILLS</h4> <h5 className="h5B">{TotalKillsPlayer}</h5>
               </div>
               <div className='Textholder'>
-                <h4>ASSASINATIONS</h4> <h5 className="h5B">{Assasinations}</h5>
+                <h4 className='textgold'>ASSASINATIONS</h4> <h5 className="h5B">{Assasinations}</h5>
               </div>
               <div className='Textholder'>
-                <h4>ASSISTS</h4> <h5 className="h5B">{Assists}</h5>
+                <h4 className='textgold'>ASSISTS</h4> <h5 className="h5B">{Assists}</h5>
               </div>       
           </div>
 

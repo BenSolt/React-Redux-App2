@@ -1,65 +1,51 @@
 import React from "react";
 // import NavbarHalo from './components/NavbarHalo';
-import Imagee from './SpaceshipsAlien.png';
-import Test from '../components/Test';
+//import Imagee from './SpaceshipsAlien.png';
 export default function Home() {
 
   
-    const cycleLoop = [0,1,0,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18];
-    let currentLoopIndex= 0;
-    
-   
-    // let canvas = document.getElementById("gameScreen");
-    // let ctx = canvas.getContext("2d");
-    // let img = new Image();
-    //  img.src = Imagee
-    // img.onload = function() {
-    //             init();
-    //       }
- 
-    const scale = 2;
-    const width = 200;
-    const height = 200;
-    //74 74
-    const scaledWidth = scale * width;
-    const scaledHeight = scale * height;
-
-  
-
-
-    // function drawFrame(frameX, frameY, canvasX, canvasY) {
-    //   ctx.drawImage(img,
-    //                 frameX * width, frameY * height, width, height,
-    //                 canvasX, canvasY, scaledWidth, scaledHeight);
-    //   } 
-
-      // function step(){
-      //   drawFrame(cycleLoop[currentLoopIndex,0], 2, 0,0);
-      // } 
-     
-      // function init() {
-      //   window.requestAnimationFrame(step);
-      // }
-      
-
     return(
       <div>
-              
-        <Test/>
+      
+        <h1 className='textwhite'>ABOUT ME</h1>
 
-            <h1>HOME</h1>
-              
-              {/* <canvas id="gameScreen"></canvas> */}
+        <h2 className='textwhite'>Benjamin Solt</h2>
+        
+        <p className='textwhite'> Apart from attending school online with Lambda, I enjoy hanging out with 
+            family, friends, meeting new people, and playing sports, especially Ultimate Frisbee.
+            <br/>
+            In addition, I enjoy coding, creating artwork, working with the Unreal Engine, and playing 
+            the occasional video game.
+        </p>
 
-              <img  id="imagg" src={Imagee} />
-              {/* <img id='test' src={Imagee}/> */}
-              <span className="sprite ie"></span>
-              
-              
-              {/* <img src={Imagee} /> */}
-              
-            {/* <canvas id='gameScreen'width="256" height="256"></canvas> */}
-               
+        <button class="button" href="https://www.linkedin.com/in/ben-solt-8447bb94/">LinkedIn</button>
+                            <h4>Email: Bensolt@gmail.com</h4>
+                            <h4>Cell#: 215-360-5410</h4>
+
+
+        <div class="info2">
+          <h2>Skills</h2>
+            <ul>
+              <li>Javascript</li>
+              <li>CSS, HTML</li>
+              <li>Adobe Creative Suite</li>
+              <li>3D Studio Max</li>
+              <li>Unreal Engine</li>
+            </ul>
+        </div>
+
+        <div class="imageholder">
+          <img class='img'src="../images/BenandKaylee.jpg" alt="BenandKaylee(dog)" />
+         
+        </div>
+
+
+
+              {/* <img  className="imag1" src={Imagee} 
+                 style={{objectFit: "none"}}/>
+              <img  className="imag2" src={Imagee} 
+                 style={{objectFit: "none"}}/>
+              <img  className="imagdefault" src={Imagee}/>  */}
                 
       </div>
     )

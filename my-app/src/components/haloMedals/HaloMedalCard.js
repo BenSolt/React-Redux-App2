@@ -40,7 +40,7 @@ export default function HaloMedalCard({m}) {
     
     };
 
-    const scale = 2;
+    const scale = 1;
     const width = 74;
     const height = 74;
     const scaledWidth = scale * width;
@@ -70,15 +70,19 @@ export default function HaloMedalCard({m}) {
           {/* <h3>{m.spriteLocation.top}</h3> */}
           {/* <span className="sprite1 medal"></span> */}
           
-          <img className="sprite1 medal" src={m.spriteLocation.spriteSheetUri}/> 
+          {/*.classification: 'Oddball' */}
+          <img className="carrierprotected" src={m.spriteLocation.spriteSheetUri}
+              style={{
+              objectFit: "none",
+              // objectPosition: `-${m.spriteLocation.top}px -${m.spriteLocation.left}px`,
+              // height: `${m.spriteLocation.height}px`,
+              // width: `${m.spriteLocation.width}px`
+              }}
+            /> 
 
-          {/* <img className="MapImage" src={m.spriteLocation.spriteSheetUri}/> */}
-          {/* <img  id="gameScreen" src={m.spriteLocation.spriteSheetUri}/> */}
-          
-          {/* 0px 0px */}
-           {/* -148px, -222px */}
-          {/* width 74px; */}
-          {/* height: 74px;  */}
+          <img className="killspree" src={m.spriteLocation.spriteSheetUri}
+               style={{objectFit: "none"}}/>
+         
          
          
       </div>

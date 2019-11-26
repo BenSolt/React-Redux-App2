@@ -9,7 +9,6 @@ import './css/haloMap.css';
 
 //MY IMPORTS
 import Home from './components/Home';
-import Test from './components/Test';
 import Default from './components/Default';
 import Dogs from './components/Dogs';
 import HaloRank from './components/haloRanks/HaloRank';
@@ -36,8 +35,7 @@ function App() {
       
       <div>
       <Route exact path="/" component={Home}/>
-      {/* <Route exact path="/" component={Test}/> */}
-      <Route path="/search" component={SearchForm}/>
+      {/* <Route path="/search" component={SearchForm}/> */}
       <Route exact path="/halo" component={NavbarHalo}/>
       <Route path="/default" component={Default}/>
       {/* <Route path="/dogs" component={Dogs}/> */}

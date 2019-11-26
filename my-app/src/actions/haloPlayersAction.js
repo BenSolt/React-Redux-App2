@@ -26,9 +26,6 @@ export const getHaloPlayerA = () => dispatch => {
         .then(res => {
             dispatch({type: FETCHING_INFO_HALO_SUCESS_PLAYER, payload: res.data.Results})
            console.log(res.data.Results,'Haloplayers action')
-
-        //    res.data.Results.filter(p =>
-        //     p.players.toLowerCase().includes(query.toLowerCase()))
         })
         .catch(err => {
             console.log(err)
