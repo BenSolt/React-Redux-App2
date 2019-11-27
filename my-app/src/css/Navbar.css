@@ -2,15 +2,16 @@
     padding: 12px;
     background: black;
 }
-
 .flexnav{
     display: flex;
 }
 
-.Navbarholderhalo {
-    padding: 7px;
-    background: grey;  
+.logo{
+    width: 200px;
+    height: auto; 
+    /* border: 2px solid red; */
 }
+
 
 .navlinkholder{
     padding: 5px 5px 5px 5px;
@@ -32,11 +33,9 @@
     background: rgb(0, 129, 250);
 }
 
-/* TESTING NAVBAR STYLE */
-
-.navtext{
-color: white;
-padding: 0 15px 0 15px;
+.navlink:hover{
+    /* color: white; */
+    background: rgb(0, 129, 250);
 }
 
 .navlink2{
@@ -51,12 +50,29 @@ padding: 0 15px 0 15px;
     background:  rgb(70, 70, 70);
 }
 
-.logo{
-    width: 200px;
-    height: auto;
-    
-    /* border: 2px solid red; */
+.navlink2:hover{
+    /* color: white; */
+    background:  rgb(97, 97, 97);
 }
+
+.Navbarholderhalo {
+    padding: 7px;
+    background: grey;  
+}
+
+
+
+
+
+/* TESTING NAVBAR STYLE */
+
+.navtext{
+color: white;
+padding: 0 15px 0 15px;
+}
+
+
+
 
 
 
@@ -72,15 +88,7 @@ padding: 0 15px 0 15px;
     background: rgb(0, 78, 180);
 }
 
-.navlink:hover{
-    /* color: white; */
-    background: rgb(0, 129, 250);
-}
 
-.navlink2:hover{
-    /* color: white; */
-    background:  rgb(97, 97, 97);
-}
 
 .navlinkHalo:hover{
     /* color: white; */
@@ -98,13 +106,8 @@ nav{
 
 .navbar2 {
     align-items: center;
-    /* border-bottom: 1px solid rgb(221, 221, 221); */
     display: flex;
-    justify-content: space-between;
-    /* padding: 0 15%; */
-    /* -webkit-box-shadow: 0px 2px 15px -8px rgba(0, 0, 0, 0.42); */
-    /* -moz-box-shadow: 0px 2px 15px -8px rgba(0, 0, 0, 0.42); */
-    /* box-shadow: 0px 2px 15px -8px rgba(0, 0, 0, 0.42); */
+    justify-content: space-between;  
   }
 
 
