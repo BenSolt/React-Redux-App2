@@ -5,13 +5,19 @@ import BenKaylee from '../images/BenandKaylee.jpg';
 
 export default function Home() {
 
+  function openLinkedIn() {
+     window.open("https://www.linkedin.com/in/ben-solt-8447bb94/");
+  }
+
+  function openGitHub() {
+    window.open("https://github.com/BenSolt/");
+  }
   
     return(
       <div className='mainbox'>
-          <h1 className='margintext'>ABOUT ME</h1>
 
         <div className='name'>
-          <h1 className='margintextName'>Benjamin Solt</h1>
+          <h1>Benjamin Solt</h1>
         </div>
 
         <div className="section1">
@@ -21,8 +27,8 @@ export default function Home() {
                 it and cant wait to use my experiences in the working world.
                 <br/>
                 <br/>
-                Apart from school, I hang out with family, friends, and play sports. I also enjoy, 
-                creating artwork, working with the Unreal Engine, and playing 
+                Apart from attending Lambda, I hang out with family, friends, and play sports. I also enjoy
+                creating artwork on the computer, working with the Unreal Game Engine, and
                 the occasional video game with friends.
               </p>
             </div>
@@ -33,12 +39,12 @@ export default function Home() {
           <div className="contactbox">
               <h4 className="margintext2">Email: Bensolt@gmail.com</h4>
               <h4 className="margintext2">Cell#: 215-360-5410</h4>
-              <button class="btn" href="https://www.linkedin.com/in/ben-solt-8447bb94/">LinkedIn</button>
-              <button class="btn" href="https://github.com/BenSolt">GitHub</button>
+              <button class="btn" onClick={openGitHub}>GitHub</button> 
+              <button class="btn" onClick={openLinkedIn}>LinkedIn2</button>
           </div>
           
           <div className="skillbox">
-            <h2 className='margintext'>Skills</h2>
+            <h2 className='margintext1'>Skills</h2>
               <div className='ulholder'>
                 <ul className='litext'>
                   <li>Javascript</li>

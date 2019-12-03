@@ -1,14 +1,19 @@
+.PlayerContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .PlayerCard{
-    width: 500px;
+    width: 400px;
     border: 3px solid black;
     background: rgb(61, 61, 61);
-    margin: 20px;
-    
+    margin: 20px;   
 }
 
 .Gamertag{
     background: gold;
-    padding: 5px;
+    padding: 2px;
     border-bottom: 3px solid black;
 }
 
@@ -34,6 +39,7 @@
 
     .textgold{
     color: rgb(204, 133, 0);
+    margin-top: 5px;
     }
 
     .h5A{

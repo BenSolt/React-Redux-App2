@@ -19,6 +19,8 @@ import HaloPlayerB from './components/haloPlayers/HaloPlayerB';
 import Artwork from './components/Artwork';
 import Codework from './components/codework';
 
+
+
 //NAV BAR
 import Navbar from './components/navbar/Navbar';
 import NavbarHalo from './components/navbar/NavbarHalo';
@@ -39,6 +41,7 @@ function App() {
       <Route exact path="/" component={Home}/>
       <Route path="/projects" component={Codework}/>
       <Route path="/artwork" component={Artwork}/>
+      
       <Route exact path="/halo" component={NavbarHalo}/>
       <Route path="/default" component={Default}/>
       {/* <Route path="/dogs" component={Dogs}/> */}

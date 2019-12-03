@@ -39,7 +39,7 @@ export default function HaloPlayerCard({p}) {
        
 
           <div className='Gamertag'>
-            <h1>GamerTag: {p.Id}</h1>
+            <h1> {p.Id}</h1>
           </div>
          
           <div className="Info">

@@ -9,16 +9,6 @@ export default function Players2() {
   const players = [
     'Xtianumbra',
     'Etherblades89',
-    // 'mdsolt',
-    // 'muscleman0927',
-    // 'PaulSolt',
-    // 'TomASck',
-    // 'ImagelessBean',
-    // 'DePal912',
-    // 'Killgear',
-    // 'VeteranFerret58',
-
-
     'ACA AC3',
     'AT WILL 2703',
     'Mr DomeFace',
@@ -35,7 +25,14 @@ export default function Players2() {
     'goopboy123',
     'MATRICKX',
     // 'primelos'
-    
+    // 'mdsolt',
+    // 'muscleman0927',
+    // 'PaulSolt',
+    // 'TomASck',
+    // 'ImagelessBean',
+    // 'DePal912',
+    // 'Killgear',
+    // 'VeteranFerret58',
 
 ]
 
@@ -77,7 +74,7 @@ export default function Players2() {
           />
         </form>
       </div>
-    <div>
+    <div className="PlayerContainer">
         {data.map(p => {
          
               return < HaloPlayerCard key={p.Id} p={p}/>

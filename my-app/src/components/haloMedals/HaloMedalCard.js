@@ -57,11 +57,12 @@ export default function HaloMedalCard({m}) {
       // ctx.drawImage(img, width * 0, 0, width, height, scaledWidth * 0, 0, scaledWidth, scaledHeight);
       // ctx.drawImage(img, width * 1, 0, width, height, scaledWidth * 1, 0, scaledWidth, scaledHeight);
     }
+  
 
 //////////////////////////
 
     return (
-      <div className="Mapcard">
+      <div className="Medalcard">
   
           {/* <h3>{m.id}</h3> */}
           <h3>{m.name}</h3>
@@ -70,18 +71,22 @@ export default function HaloMedalCard({m}) {
           {/* <h3>{m.spriteLocation.top}</h3> */}
           {/* <span className="sprite1 medal"></span> */}
           
+          
           {/*.classification: 'Oddball' */}
-          <img className="carrierprotected" src={m.spriteLocation.spriteSheetUri}
-              style={{
-              objectFit: "none",
-              // objectPosition: `-${m.spriteLocation.top}px -${m.spriteLocation.left}px`,
-              // height: `${m.spriteLocation.height}px`,
-              // width: `${m.spriteLocation.width}px`
-              }}
-            /> 
+          <div className='spriteholder'>
+            <img className="carrierprotected" src={m.spriteLocation.spriteSheetUri}
+                style={{
+                objectFit: "none",
+               
+                // objectPosition: `-${m.spriteLocation.top}px -${m.spriteLocation.left}px`,
+                // height: `${m.spriteLocation.height}px`,
+                // width: `${m.spriteLocation.width}px`
+                }}
+              /> 
+          </div>
 
-          <img className="killspree" src={m.spriteLocation.spriteSheetUri}
-               style={{objectFit: "none"}}/>
+          {/* <img className="killspree" src={m.spriteLocation.spriteSheetUri}
+               style={{objectFit: "none"}}/> */}
          
          
          
