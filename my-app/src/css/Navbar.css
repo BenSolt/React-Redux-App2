@@ -7,29 +7,38 @@
 
     @media only screen and (max-width: 500px) {
         .Navbarholder{
-            padding: 6px;
-            /* background: red; */
-            /* display: flex;
-            justify-content: space-evenly; */
-          
+            padding: 12px;
         }
     }
 
 
 .flexnav{
     display: flex;
+    /* border: 2px solid red; */
 }
+
+
+@media only screen and (max-width: 800px) {
+    .flexnav{
+        display: flex;
+        flex-wrap: wrap;  
+    }
+}
+
 
     @media only screen and (max-width: 500px) {
         .flexnav{
             display: flex;
             flex-wrap: wrap;  
+            /* border: 2px solid yellow; */
         }
     }
 
+  
 .logo{
     width: 200px;
     height: auto;
+    /* border: 2px solid orange; */
 }
 
     @media only screen and (max-width: 500px) {
@@ -41,39 +50,14 @@
 
 .navlinkholder{
     padding: 5px;
-    /* border: 2px solid red; */
+    /* border: 2px solid green; */
 }
 
-
+/* .navlink:active{
+    background: rgb(0, 129, 250);
+} */
 
 .navlink{
-    color: white;
-    /* border: 2px solid black; */
-    padding: 15px;
-    margin: 0 15px 0 15px; 
-    border-radius: 2px;
-    font-size: 1rem;
-    text-decoration: none;
-    font-weight: bold;
-    background:  rgb(0, 78, 180);
-}
-
-    @media only screen and (max-width: 500px) {
-        .navlink{
-            display: none;  
-        }
-    }
-
-.navlink:active{
-    background: rgb(0, 129, 250);
-}
-
-.navlink:hover{
-    /* color: white; */
-    background: rgb(0, 129, 250);
-}
-
-.navlink2{
     color: white;
     /* border: 2px solid black; */
     padding: 15px;
@@ -85,32 +69,17 @@
     background:  rgb(95, 95, 95);
 }
 
-    @media only screen and (max-width: 1000px) {
-
-        .navlink2{
-            color: white;
-            /* border: 2px solid black; */
-            padding: 10px;
-            margin: 0 10px 0 10px; 
-            border-radius: 2px;
-            font-size: 1rem;
-            text-decoration: none;
-            font-weight: bold;
-            background:  rgb(95, 95, 95);
-        }
-    }
-
-
-
-
-
+.navlink:hover{
+    color: white; 
+    /* background:  red; */
+}
+  
     @media only screen and (max-width: 500px) {
 
-        .navlink2{
+        .navlink{
             color: white;
-            /* border: 2px solid black; */
-            padding: 10px;
-            margin: 0 10px 0 10px; 
+            padding: 15px;
+            margin: 0 8px 0 8px; 
             border-radius: 2px;
             font-size: 1rem;
             text-decoration: none;
@@ -118,17 +87,6 @@
             background:  rgb(95, 95, 95);
         }
     }
-
-
-/* .navlink2:hover{
-    color: white; 
-    background:  rgb(120, 120, 120);
-} */
-
-.navlink2:hover{
-    color: white; 
-    background:  red;
-}
 
 .Navbarholderhalo {
     padding: 7px;
@@ -143,12 +101,12 @@ padding: 0 15px 0 15px;
 .navlinkHalo{
     color: white;
     /* border: 2px solid black; */
-    padding: 10px 12px 10px 12px;
-    margin: 0 15px 0px 15px; 
-    border-radius: 5px;
-    font-size: .6rem; 
+    padding: 15px;
+    margin: 0 15px 0 15px; 
+    border-radius: 2px;
+    font-size: 1rem;
     text-decoration: none;
-    font-weight:bold;
+    font-weight: bold;
     background: rgb(0, 78, 180);
 }
 
@@ -171,17 +129,9 @@ nav{
 
 .NavbarholderDark {
     align-items: center;
-    display: flex;
-    justify-content: space-between;  
+    display: flex; 
+    /* border: 2px solid green;  */
   }
-  
-  @media only screen and (max-width: 500px) {
-    .NavbarholderDark{
-         
-        width: 128px;
-        /* background: black; */
-    }
-}
 
 .dark-mode__toggle {
     background: papayawhip;

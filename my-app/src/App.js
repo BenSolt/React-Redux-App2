@@ -6,9 +6,10 @@ import './css/medals.css';
 import './css/Navbar.css';
 import './css/Player.css';
 import './css/haloMap.css';
+import './css/rank.css';
 
 //MY IMPORTS
-import Home from './components/Home';
+
 import Default from './components/Default';
 import Dogs from './components/Dogs';
 import HaloRank from './components/haloRanks/HaloRank';
@@ -22,7 +23,6 @@ import Codework from './components/codework';
 
 
 //NAV BAR
-import Navbar from './components/navbar/Navbar';
 import NavbarHalo from './components/navbar/NavbarHalo';
 
 import { Route } from "react-router-dom";
@@ -35,18 +35,18 @@ function App() {
 
     <div className="App">
      
-        <Navbar />  
+        <NavbarHalo />
+       
       
       <div>
-      <Route exact path="/" component={Home}/>
-      <Route path="/projects" component={Codework}/>
-      <Route path="/artwork" component={Artwork}/>
       
-      <Route exact path="/halo" component={NavbarHalo}/>
-      <Route path="/default" component={Default}/>
+   
+      
+      {/* <Route exact path="/" component={NavbarHalo}/> */}
+      
       {/* <Route path="/dogs" component={Dogs}/> */}
       <Route path="/halorank" component={HaloRank} />
-      <Route path="/haloplayers" component={HaloPlayer} />
+      {/* <Route path="/haloplayers" component={HaloPlayer} /> */}
       <Route path="/halomaps" component={HaloMaps}/>
       <Route path="/halomedals" component={HaloMedals}/>
 

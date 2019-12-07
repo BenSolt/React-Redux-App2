@@ -10,6 +10,10 @@
   background-color: #313843;
 }
 
+
+
+
+
 /*/////////////////////////////////////////////////*/
 /*///////  HALO RANK  ////////////////////////////*/
 /*///////////////////////////////////////////////*/
@@ -23,39 +27,6 @@
   margin-bottom: 5px;
   border: 2px solid red;
 } */
-
-/*///////////////////////////////////////////*/
-/*///////  HALO RANK CARD //////////////////*/
-/*/////////////////////////////////////////*/
-
-
-h2{
-  padding-right: 12px;
-}
-
-/* .Banner{
-  width: 75px;
-  height: auto; 
-  border: 2px solid black;
-} */
-
-
-.TierHolder{
-  display: flex;
-  justify-content: center;
-
-}
-
-.Tier{
-  /* display: flex; */
-  /* flex-direction: column; */
-  flex-wrap: wrap;
-  width: 75px;
-  /* height: auto; */
-  border: 2px solid black;
-  margin: 4px;
-  background: white;
-}
 
 
 /*///////////////////////////////////////////*/

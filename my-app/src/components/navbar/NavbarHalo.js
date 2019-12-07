@@ -1,29 +1,59 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import PlayerSearchForm from '../PlayerSearchForm';
-export default function NavbarHalo(props) {
+import MyLogo from '../../images/BenSoltWallPaper.png';
+import {useDarkMode} from '../hooks/useDarkMode';
+
+
+
+
+export default function Navbar() {
+
+    const [darkMode, setDarkMode] = useDarkMode(false);
+    const toggleMode = e => {
+      e.preventDefault();
+      setDarkMode(!darkMode);
+    }
 
     return(
+        
+    <div className='Navbarholder'>
+        
+        <div className='flexnav'>
+        <img className='logo' src={MyLogo}/>
 
-    <div className='Navbarholderhalo'>
-          
-        <div>
-        {/* <h3>HALO INFO</h3> */}
-            <nav>
+            <nav className='navlinkholder'>
+               
+                <NavLink className='navlinkHalo' to='/'>HOME</NavLink>
+                
+
+                <nav>
                 <NavLink className='navlinkHalo' to='/halorank'>HALO RANKS</NavLink>
-                <NavLink className='navlinkHalo' to='/haloplayers'>HALO PLAYERS</NavLink>
+                {/* <NavLink className='navlinkHalo' to='/haloplayers'>HALO PLAYERS</NavLink> */}
 
-                <NavLink className='navlinkHalo' to='/haloplayers2'>HALO PLAYERS2</NavLink>
+                <NavLink className='navlinkHalo' to='/haloplayers2'>HALO PLAYERS</NavLink>
 
                 <NavLink className='navlinkHalo' to='/halomaps'>HALO MAPS</NavLink>
                 <NavLink className='navlinkHalo' to='/halomedals'>HALO MEDALS</NavLink>
                 
             </nav> 
 
-            {/* <div className='search-form'>
-                <PlayerSearchForm/>
-                </div>  */}
-        </div>
-    </div>
+                 {/* <NavLink className='navlink' to='/default'>DEFAULT</NavLink> */}
+           
 
-    )}
+           
+            </nav>
+            <div className="NavbarholderDark">
+                <h5 className="navtext">Darkmode</h5>
+                <div className="dark-mode__toggle">
+                    <div
+                    onClick={toggleMode}
+                    className={darkMode ? 'toggle toggled' : 'toggle'}
+                    />
+                </div>       
+            </div>       
+
+        </div>
+                 
+    </div>
+    )
+}

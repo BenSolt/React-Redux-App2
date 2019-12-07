@@ -22,16 +22,22 @@ const aRank = halodataR.filter(str => (str.name === "Bronze"))
     return (
       
         <div className='Halo_Rank_Container'>
-            <NavbarHalo/>
+      
         <h2>Halo Ranks</h2>
         <div className='Ranks'>
         
-   
-       {aRank.map(h => {
+        
+        {halodataR.map(h => {
         
         return < HaloRankCard key={h.id} h={h} />
             
         })}  
+
+       {/* {aRank.map(h => {
+        
+        return < HaloRankCard key={h.id} h={h} />
+            
+        })}   */}
 
         </div> 
 

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { connect } from 'react-redux';
 import {getHaloPlayerA} from '../../actions/haloPlayersAction';
 
+import {getHaloRankA} from '../../actions/haloRankAction';
 
 
 import NavbarHalo from '../navbar/NavbarHalo';
@@ -19,6 +20,7 @@ const HaloPlayer = ({ getHaloPlayerA, halodataP, isFetching, error}) => {
 
     useEffect((halodataP) => {
         getHaloPlayerA();
+       
         
     }, [getHaloPlayerA]);
 
@@ -30,7 +32,7 @@ const HaloPlayer = ({ getHaloPlayerA, halodataP, isFetching, error}) => {
     return (
         // 
             <div>
-                <NavbarHalo/>
+            
                 <div>
                 <PlayerSearchForm/> 
                 </div>
@@ -39,12 +41,11 @@ const HaloPlayer = ({ getHaloPlayerA, halodataP, isFetching, error}) => {
                   return < HaloRankCard key={h.id} h={h} />
                 })} */}
 
-                 {halodataP.map(p => {
+                 {/* {halodataP.map(p => {
                     return < HaloPlayerCard key={p.Id} p={p}/>
-                })}
-               
-                     
+                })} */}
 
+                  
 
 
             </div>
@@ -54,7 +55,7 @@ const HaloPlayer = ({ getHaloPlayerA, halodataP, isFetching, error}) => {
 const mapStateToProps = state => {
 //   console.log(state.halodataP)
   return {
-   
+    
     halodataP: state.halodataP,
     isFetching: state.isFetching,
     error: state.error
@@ -63,5 +64,6 @@ const mapStateToProps = state => {
 
 export default connect(
   mapStateToProps,
-  {getHaloPlayerA}
+  {getHaloPlayerA},
+  
 )(HaloPlayer);

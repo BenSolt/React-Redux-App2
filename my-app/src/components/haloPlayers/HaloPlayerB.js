@@ -4,6 +4,9 @@ import axiosWithAuth from "../../utils/axiosWithAuth";
 
 import HaloPlayerCard from "./HaloPlayerCard";
 
+import NavbarHalo from "../navbar/NavbarHalo";
+import HaloRankCard from "../haloRanks/HaloRankCard";
+
 export default function Players2() {
 
   const players = [
@@ -24,6 +27,7 @@ export default function Players2() {
     'S0 HELP ME GOD',
     'goopboy123',
     'MATRICKX',
+
     // 'primelos'
     // 'mdsolt',
     // 'muscleman0927',
@@ -33,19 +37,20 @@ export default function Players2() {
     // 'DePal912',
     // 'Killgear',
     // 'VeteranFerret58',
+  ]
 
-]
+ 
 
   const [data, setData] = useState([]);
   const [query, setQuery] = useState("");
-
-
+  const [rankData, setRankData] = useState([]);
+  const aRank = rankData.filter(str => (str.name === "Bronze"))
+  
     
   useEffect(() => {
     axiosWithAuth()
       .get (`stats/h5/servicerecords/arena?players=${players}`) 
       .then(res => {
-        // const info = res.data.Results
         const info = res.data.Results.filter(p =>
            p.Id.toLowerCase().includes(query.toLowerCase())
          );
@@ -54,12 +59,15 @@ export default function Players2() {
       });
   }, [query]);
 
+ 
+
 
   const handleInputChange = event => {
     setQuery(event.target.value);
   };
   return (
     <div>
+         
       <div className="Searchbar" >
           <h3>Search Player:</h3>
         <form>
@@ -80,6 +88,9 @@ export default function Players2() {
               return < HaloPlayerCard key={p.Id} p={p}/>
         
         })}
+
+     
+
       </div>
     </div>
   );

@@ -7,7 +7,8 @@ import NavbarHalo from '../navbar/NavbarHalo';
 
 const HaloMedals = ({ getHaloMedalsA, halodataMedal, isFetching, error}) => {
 
-    // console.log(halodataM, 'map names')
+    
+    // const aMedal = halodataMedal.filter(str => (str.name === "Carrier Protected"))
     
     useEffect((halodataMedal) => {
         getHaloMedalsA();
@@ -20,7 +21,7 @@ const HaloMedals = ({ getHaloMedalsA, halodataMedal, isFetching, error}) => {
     
     return (
       <div>
-        <NavbarHalo />
+        
         <h2>Halo Medals</h2>
         
           {/* <h1>{h.name}</h1> */}
@@ -29,6 +30,22 @@ const HaloMedals = ({ getHaloMedalsA, halodataMedal, isFetching, error}) => {
           {halodataMedal.map(m => {
             return < HaloMedalCard key={m.id} m={m}/>
             })}
+            
+          {/* {aMedal.map(m => {
+            return < HaloMedalCard key={m.id} m={m}/>
+            })} */}
+
+
+            {/* {halodataMedal.map(item => {
+                    if(item.id === id) {
+                      return {
+                        ...item,
+                        purchased: !item.purchased
+                      }
+                    }else{
+                      return item;
+                    }
+                  })} */}
         </div>  
 
       </div>

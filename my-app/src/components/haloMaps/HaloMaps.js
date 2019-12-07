@@ -20,7 +20,7 @@ const HaloMaps = ({ getHaloMapA, halodataM, isFetching, error}) => {
     
     return (
       <div>
-        <NavbarHalo />
+      
         <h2>Halo</h2>
         
           {/* <h1>{h.name}</h1> */}
