@@ -10,6 +10,8 @@ export default function Home() {
             <h2>Click on Halo Ranks, Halo Players, Halo Maps, and Halo Medals
                 to view said info from api.
             </h2>
+       
+
         </div>
     )
 }

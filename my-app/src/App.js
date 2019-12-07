@@ -18,7 +18,7 @@ import HaloPlayer from './components/haloPlayers/HaloPlayer';
 import HaloMaps from './components/haloMaps/HaloMaps';
 import HaloMedals from './components/haloMedals/HaloMedals';
 import HaloPlayerB from './components/haloPlayers/HaloPlayerB';
-import Artwork from './components/Artwork';
+
 import Codework from './components/codework';
 
 

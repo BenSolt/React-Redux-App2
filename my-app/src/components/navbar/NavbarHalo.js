@@ -1,6 +1,5 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import MyLogo from '../../images/BenSoltWallPaper.png';
 import {useDarkMode} from '../hooks/useDarkMode';
 
 
@@ -19,7 +18,7 @@ export default function Navbar() {
     <div className='Navbarholder'>
         
         <div className='flexnav'>
-        <img className='logo' src={MyLogo}/>
+
 
             <nav className='navlinkholder'>
                

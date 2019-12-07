@@ -12,6 +12,8 @@
 
 .homebox{
   margin-top: 5%;
+  /* background: url('api-halo5.jpg') */
+  background-image: 'api-halo5.jpg';
 }
 
 
