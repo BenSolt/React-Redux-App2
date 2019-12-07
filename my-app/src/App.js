@@ -10,8 +10,9 @@ import './css/rank.css';
 
 //MY IMPORTS
 
-import Default from './components/Default';
+import Home from './components/Home';
 import Dogs from './components/Dogs';
+import Default from './components/Default';
 import HaloRank from './components/haloRanks/HaloRank';
 import HaloPlayer from './components/haloPlayers/HaloPlayer';
 import HaloMaps from './components/haloMaps/HaloMaps';
@@ -40,17 +41,16 @@ function App() {
       
       <div>
       
-   
-      
-      {/* <Route exact path="/" component={NavbarHalo}/> */}
-      
-      {/* <Route path="/dogs" component={Dogs}/> */}
+      <Route path="/" component={Home}/>
       <Route path="/halorank" component={HaloRank} />
-      {/* <Route path="/haloplayers" component={HaloPlayer} /> */}
       <Route path="/halomaps" component={HaloMaps}/>
       <Route path="/halomedals" component={HaloMedals}/>
 
       <Route path="/haloplayers2" component={HaloPlayerB} />
+
+       {/* <Route exact path="/" component={NavbarHalo}/> */}
+        {/* <Route path="/haloplayers" component={HaloPlayer} /> */}
+      {/* <Route path="/dogs" component={Dogs}/> */}
 
 
       </div>

@@ -69,7 +69,7 @@ export default function Players2() {
     <div>
          
       <div className="Searchbar" >
-          <h3>Search Player:</h3>
+          <h3 className='searchtext'>Search Player:</h3>
         <form>
           <input className="Input"
             type="text"
