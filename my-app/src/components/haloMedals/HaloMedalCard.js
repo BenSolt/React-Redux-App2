@@ -42,10 +42,10 @@ export default function HaloMedalCard({m}) {
           
           {/*.classification: 'Oddball' */}
           <div className='spriteholder'>
-            <img className="carrierProtected" src={m.spriteLocation.spriteSheetUri}
+            <img className="sprite" src={m.spriteLocation.spriteSheetUri}
                 style={{
                 objectFit: "none",
-                //  objectPosition: `-${m.spriteLocation.top}px -${m.spriteLocation.left}px`
+                objectPosition: `-${m.spriteLocation.left}px -${m.spriteLocation.top}px`
                 // height: `${m.spriteLocation.height}px`
                 // width: `${m.spriteLocation.width}px`
                 }}

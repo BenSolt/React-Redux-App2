@@ -2,25 +2,16 @@ import React, { useEffect, useState } from "react";
 import axiosWithAuth from "../../utils/axiosWithAuth";
 
 import HaloRankCardB from "../haloRanks/HaloRankCardB";
-// import HaloRankCard from "../haloRanks/HaloRankCard";
+import HaloRankCard from "../haloRanks/HaloRankCard";
+
+
 
 export default function HaloPlayerCard({p}) {
 
   const [rankData, setRankData] = useState([]);
-  const aRank = rankData.filter(str => (str.name === "Bronze"))
+  // const aRank = rankData.filter(str => (str.name === "Bronze"))
 
-  // useEffect(() => {
-  //   axiosWithAuth()
-  //     .get ('metadata/h5/metadata/csr-designations') 
-  //     .then(res => {
-  //       const rank = res.data
-  //       //.Results.filter(p =>
-  //       //    p.Id.toLowerCase().includes(query.toLowerCase())
-  //       //  );
-  //       console.log(res.data);
-  //       setRankData(rank)
-  //     });
-  // });
+
 
                     const TotalKillsV = 
               p.Result.ArenaStats.DestroyedEnemyVehicles.map(p => {
@@ -33,7 +24,8 @@ export default function HaloPlayerCard({p}) {
                     p.Result.ArenaStats.TotalKills
                   
                     const HighestRankAttained =
-                    p.Result.ArenaStats.HighestCsrAttained.Csr
+                    p.Result.ArenaStats.HighestCsrAttained ?
+                    p.Result.ArenaStats.HighestCsrAttained.Csr : null
 
                     const Assasinations =
                     p.Result.ArenaStats.TotalAssassinations
@@ -61,24 +53,12 @@ export default function HaloPlayerCard({p}) {
           <div className="Info">
             <h3>Experience Rank:</h3><h3>{p.Result.SpartanRank}</h3>
             <h3>Highest Rank:</h3> <h3>{HighestRankAttained}</h3>
-          
-            {/* {aRank.map(h => {
-            
-              return < HaloRankCardB key={h.id} h={h} />
-            })}  */}
-
-         
+      
 
             {/* {aRank.map(h => {
-               return (
-                <div> 
-                  <img className="Tier" src={h.iconImageUrl} />
-                  
-                </div> 
-               )
-          })} */}
+                  return < HaloRankCard key={h.id} h={h} />
+                })}  */}
 
-          
             
 
           </div>

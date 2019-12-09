@@ -8,25 +8,27 @@ import {getHaloRankA} from '../../actions/haloRankAction';
 import NavbarHalo from '../navbar/NavbarHalo';
 
 import HaloPlayerCard from "./HaloPlayerCard";
-
+import HaloRankCard from "../haloRanks/HaloRankCard";
 
 import PlayerSearchForm from '../PlayerSearchForm';
 
-const HaloPlayer = ({ getHaloPlayerA, halodataP, isFetching, error}) => {
+const HaloPlayer = ({ getHaloPlayerA, halodataP, getHaloRankA, halodataR, isFetching, error}) => {
   
-    // const aRank = halodata.filter(str => (str.name === "Bronze"))
+     const aRank = halodataR.filter(str => (str.name === "Diamond"))
 
     //const [query, setQuery] = useState("");
 
     useEffect((halodataP) => {
-        getHaloPlayerA();
-       
-        
+        getHaloPlayerA();   
     }, [getHaloPlayerA]);
+
+    useEffect((halodataR) => {
+      getHaloRankA();
+  }, [getHaloRankA]);
 
     if (isFetching) {
         
-        return <h1>Loading data...</h1>;
+        return <h1>Loading data test...</h1>;
     }else{
         
     return (
@@ -37,14 +39,16 @@ const HaloPlayer = ({ getHaloPlayerA, halodataP, isFetching, error}) => {
                 <PlayerSearchForm/> 
                 </div>
                  
-                 {/* {aRank.map(h => {
-                  return < HaloRankCard key={h.id} h={h} />
-                })} */}
+                 
+                    {aRank.map(h => {
+                      return < HaloRankCard key={h.id} h={h} />
+                    })} 
 
-                 {/* {halodataP.map(p => {
-                    return < HaloPlayerCard key={p.Id} p={p}/>
-                })} */}
-
+                      {halodataP.map(p => {
+                        return < HaloPlayerCard key={p.Id} p={p}/>
+                        
+                    })}
+            
                   
 
 
@@ -55,7 +59,7 @@ const HaloPlayer = ({ getHaloPlayerA, halodataP, isFetching, error}) => {
 const mapStateToProps = state => {
 //   console.log(state.halodataP)
   return {
-    
+    halodataR: state.halodataR,
     halodataP: state.halodataP,
     isFetching: state.isFetching,
     error: state.error
@@ -64,6 +68,6 @@ const mapStateToProps = state => {
 
 export default connect(
   mapStateToProps,
-  {getHaloPlayerA},
+  {getHaloPlayerA, getHaloRankA},
   
 )(HaloPlayer);

@@ -14,12 +14,11 @@ import Home from './components/Home';
 //import Dogs from './components/Dogs';
 //import Default from './components/Default';
 import HaloRank from './components/haloRanks/HaloRank';
-//import HaloPlayer from './components/haloPlayers/HaloPlayer';
 import HaloMaps from './components/haloMaps/HaloMaps';
 import HaloMedals from './components/haloMedals/HaloMedals';
 import HaloPlayerB from './components/haloPlayers/HaloPlayerB';
 
-
+import HaloPlayer from './components/haloPlayers/HaloPlayer';
 
 
 
@@ -45,12 +44,12 @@ function App() {
       <Route path="/halorank" component={HaloRank} />
       <Route path="/halomaps" component={HaloMaps}/>
       <Route path="/halomedals" component={HaloMedals}/>
-
       <Route path="/haloplayers2" component={HaloPlayerB} />
 
-       {/* <Route exact path="/" component={NavbarHalo}/> */}
-        {/* <Route path="/haloplayers" component={HaloPlayer} /> */}
-      {/* <Route path="/dogs" component={Dogs}/> */}
+      <Route path="/haloplayers" component={HaloPlayer} />
+
+      {/* <Route exact path="/" component={NavbarHalo}/>
+      <Route path="/dogs" component={Dogs}/>  */}
 
 
       </div>

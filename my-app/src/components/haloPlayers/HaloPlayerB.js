@@ -10,33 +10,33 @@ import HaloRankCard from "../haloRanks/HaloRankCard";
 export default function Players2() {
 
   const players = [
-    'Xtianumbra',
-    'Etherblades89',
     'ACA AC3',
     'AT WILL 2703',
-    'Mr DomeFace',
-    'I POLSKA I',
-    'Sausag3Tickl3r',
+    'Etherblades89',
     'Dash MacReady',
+    'DePal912',
     'Divine King15',
+    'goopboy123',
+    'ImagelessBean',
+    'I POLSKA I',
     'I SpiritHope I',
-    'Xray Squad 90',
+    'Killgear',
+    'MATRICKX',
+    'mdsolt',
+    'Mr DomeFace',
+    'muscleman0927',
+    //'primelos',
+    'PaulSolt',
+    'Sausag3Tickl3r',
+    'S0 HELP ME GOD',
+    'thefinaledge',
     'TheMastaChamp',
+    'TomASck', 
+    'VeteranFerret58',
     'Wife H8s Halo',
     'XD marman',
-    'S0 HELP ME GOD',
-    'goopboy123',
-    'MATRICKX',
-
-    // 'primelos'
-    // 'mdsolt',
-    // 'muscleman0927',
-    // 'PaulSolt',
-    // 'TomASck',
-    // 'ImagelessBean',
-    // 'DePal912',
-    // 'Killgear',
-    // 'VeteranFerret58',
+    'Xray Squad 90',
+    'Xtianumbra',
   ]
 
  
@@ -44,8 +44,12 @@ export default function Players2() {
   const [data, setData] = useState([]);
   const [query, setQuery] = useState("");
   const [rankData, setRankData] = useState([]);
+
   const aRank = rankData.filter(str => (str.name === "Bronze"))
-  
+
+    //   useEffect((halodataR) => {
+  //     getHaloRankA();
+  // }, [getHaloRankA]);
     
   useEffect(() => {
     axiosWithAuth()
@@ -59,7 +63,6 @@ export default function Players2() {
       });
   }, [query]);
 
- 
 
 
   const handleInputChange = event => {

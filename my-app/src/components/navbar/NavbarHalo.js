@@ -27,13 +27,12 @@ export default function Navbar() {
 
                 <nav>
                 <NavLink className='navlinkHalo' to='/halorank'>HALO RANKS</NavLink>
-                {/* <NavLink className='navlinkHalo' to='/haloplayers'>HALO PLAYERS</NavLink> */}
-
                 <NavLink className='navlinkHalo' to='/haloplayers2'>HALO PLAYERS</NavLink>
-
                 <NavLink className='navlinkHalo' to='/halomaps'>HALO MAPS</NavLink>
                 <NavLink className='navlinkHalo' to='/halomedals'>HALO MEDALS</NavLink>
                 
+                <NavLink className='navlinkHalo' to='/haloplayers'>H PLAYERS TEST</NavLink>
+
             </nav> 
 
                  {/* <NavLink className='navlink' to='/default'>DEFAULT</NavLink> */}

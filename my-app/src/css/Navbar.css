@@ -107,14 +107,16 @@ padding: 0 15px 0 15px;
     font-size: 1rem;
     text-decoration: none;
     font-weight: bold;
-    background: rgb(0, 78, 180);
+    background: rgb(199, 129, 0);
+    /* background: rgb(0, 78, 180); */
 }
 
 
 
 .navlinkHalo:hover{
-    /* color: white; */
-    background: rgb(0, 129, 250);
+    color: black;
+    background: rgb(253, 187, 63);
+    /* background: rgb(0, 129, 250); */
   
 }
 
