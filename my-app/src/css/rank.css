@@ -12,7 +12,15 @@ h2{
   .TierHolder{
     display: flex;
     justify-content: center;
-  
+  }
+
+  @media only screen and (max-width: 500px) {
+      .TierHolder{
+        display: flex;
+        flex-wrap: wrap;
+        /* flex-direction: column; */
+        /* justify-content: center; */
+      }
   }
   
   .Tier{

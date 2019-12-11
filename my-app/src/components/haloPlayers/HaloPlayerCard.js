@@ -11,7 +11,9 @@ export default function HaloPlayerCard({p}) {
   const [rankData, setRankData] = useState([]);
   // const aRank = rankData.filter(str => (str.name === "Bronze"))
 
-
+//   useEffect((halodataR) => {
+//     getHaloRankA();
+// }, [getHaloRankA]);
 
                     const TotalKillsV = 
               p.Result.ArenaStats.DestroyedEnemyVehicles.map(p => {
@@ -27,6 +29,30 @@ export default function HaloPlayerCard({p}) {
                     p.Result.ArenaStats.HighestCsrAttained ?
                     p.Result.ArenaStats.HighestCsrAttained.Csr : null
 
+
+
+                    // const test =
+                    // p.Result.ArenaStats.ArenaPlaylistStats.map(p => {
+                    //   return(
+                    //     <div>{p.Csr.DesignationId}</div>
+                    //   )
+                    // })
+                       
+
+                      //   function RankImage(HighestRankAttained) { 
+                      //     var image = "";
+                      //     if (HighestRankAttained > 1500) {
+                      //         image = "https://content.halocdn.com/media/Default/games/halo-5-guardians/csr/csr_top_array00-783f32318c8c49eda0365c5daa50f5b6.png"
+                      //     } 
+                      //     else {
+                      //         image = "https://content.halocdn.com/media/Default/games/halo-5-guardians/csr/unranked_00-61fca949c33f433ba7e7507d97ff130f.png"
+                      //     }  
+                      //     return image;
+                      // }
+                    
+                    
+                   
+
                     const Assasinations =
                     p.Result.ArenaStats.TotalAssassinations
                     const Assists =
@@ -40,7 +66,8 @@ export default function HaloPlayerCard({p}) {
                     p.Result.ArenaStats.TotalGamesWon
                     const GamesTied =
                     p.Result.ArenaStats.TotalGamesTied
-                    
+
+
 
     return (
       <div className="PlayerCard">
@@ -51,10 +78,13 @@ export default function HaloPlayerCard({p}) {
           </div>
          
           <div className="Info">
-            <h3>Experience Rank:</h3><h3>{p.Result.SpartanRank}</h3>
+            <h3>Experience Rank:</h3> <h3>{p.Result.SpartanRank}</h3>
             <h3>Highest Rank:</h3> <h3>{HighestRankAttained}</h3>
-      
+            {/* <h3>test playlist:</h3> <h3>{test}</h3> */}
 
+
+            {/* <img class="tierCard" src="https://content.halocdn.com/media/Default/games/halo-5-guardians/csr/csr_top_array00-783f32318c8c49eda0365c5daa50f5b6.png"></img> */}
+            
             {/* {aRank.map(h => {
                   return < HaloRankCard key={h.id} h={h} />
                 })}  */}

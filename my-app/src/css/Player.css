@@ -4,6 +4,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    
+}
+
+.tierCard{
+    width: 75px;
 }
 
 .PlayerCard{
@@ -11,6 +16,7 @@
     border: 3px solid black;
     background: rgb(61, 61, 61);
     margin: 20px;   
+    
 }
 
 .Gamertag{

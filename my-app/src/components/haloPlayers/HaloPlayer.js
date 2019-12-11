@@ -42,11 +42,13 @@ const HaloPlayer = ({ getHaloPlayerA, halodataP, getHaloRankA, halodataR, isFetc
                  
                     {aRank.map(h => {
                       return < HaloRankCard key={h.id} h={h} />
+                      
                     })} 
 
                       {halodataP.map(p => {
-                        return < HaloPlayerCard key={p.Id} p={p}/>
+                        return < HaloPlayerCard key={p.Id} p={p}
                         
+                        />
                     })}
             
                   

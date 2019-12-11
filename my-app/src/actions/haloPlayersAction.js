@@ -21,7 +21,7 @@ export const getHaloPlayerA = () => dispatch => {
         dispatch({type: FETCHING_INFO_HALO_PLAYER});
          axiosWithAuth()
             //.get (`stats/h5/servicerecords/arena?players=Xtianumbra`) 
-        .get (`stats/h5/servicerecords/arena?players=${players}`) 
+        .get (`stats/h5/servicerecords/arena?players=${players} `) 
         //{players}[&seasonId]
         .then(res => {
             dispatch({type: FETCHING_INFO_HALO_SUCESS_PLAYER, payload: res.data.Results})

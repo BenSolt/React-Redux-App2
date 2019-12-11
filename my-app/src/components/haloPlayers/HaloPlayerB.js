@@ -12,10 +12,10 @@ export default function Players2() {
   const players = [
     'ACA AC3',
     'AT WILL 2703',
-    'Etherblades89',
     'Dash MacReady',
     'DePal912',
     'Divine King15',
+    'Etherblades89',
     'goopboy123',
     'ImagelessBean',
     'I POLSKA I',
