@@ -7,7 +7,16 @@ import NavbarHalo from '../navbar/NavbarHalo';
 
 const HaloMaps = ({ getHaloMapA, halodataM, isFetching, error}) => {
 
-    // console.log(halodataM, 'map names')
+  
+  //const ArenaMaps = 
+  // halodataM.map(m => { 
+  //   m.filter(str => (str.supportedGameModes === "Arena"))                          
+  // })
+
+  // m.filter(str => (str.supportedGameModes === "Arena"))
+  // const WarzoneMaps = halodataM.filter(str => (str.supportedGameModes === "Wazone"))
+  //const WarzoneMaps = halodataM.filter(str => (str.supportedGameModes === "Campaign))
+   
     
     useEffect((halodataM) => {
         getHaloMapA();
@@ -21,7 +30,10 @@ const HaloMaps = ({ getHaloMapA, halodataM, isFetching, error}) => {
     return (
       <div>
       
-        <h2>Halo</h2>
+        <h2>Halo 5 Maps</h2>
+
+        <button className='Btn'onClick={() => (console.log('arena'))}>Arena Maps</button>
+        <button className='Btn' >Warzone Maps</button>
         
           {/* <h1>{h.name}</h1> */}
 

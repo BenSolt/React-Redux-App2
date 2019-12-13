@@ -22,6 +22,9 @@ const HaloPlayer = ({ getHaloPlayerA, halodataP, getHaloRankA, halodataR, isFetc
         getHaloPlayerA();   
     }, [getHaloPlayerA]);
 
+    // const info = res.data.Results.filter(p =>
+    //   p.Id.toLowerCase().includes(query.toLowerCase()),
+
     useEffect((halodataR) => {
       getHaloRankA();
   }, [getHaloRankA]);
@@ -40,16 +43,17 @@ const HaloPlayer = ({ getHaloPlayerA, halodataP, getHaloRankA, halodataR, isFetc
                 </div>
                  
                  
-                    {aRank.map(h => {
+                              {halodataR.map(h => {
                       return < HaloRankCard key={h.id} h={h} />
-                      
-                    })} 
+                      })}  
+
 
                       {halodataP.map(p => {
                         return < HaloPlayerCard key={p.Id} p={p}
-                        
                         />
                     })}
+
+
             
                   
 

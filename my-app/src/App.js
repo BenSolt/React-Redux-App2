@@ -7,6 +7,7 @@ import './css/Navbar.css';
 import './css/Player.css';
 import './css/haloMap.css';
 import './css/rank.css';
+import './css/haloSeason.css';
 
 //MY IMPORTS
 
@@ -44,11 +45,11 @@ function App() {
       <Route path="/halorank" component={HaloRank} />
       <Route path="/halomaps" component={HaloMaps}/>
       <Route path="/halomedals" component={HaloMedals}/>
-      <Route path="/haloplayers2" component={HaloPlayerB} />
+      <Route path="/haloplayers" component={HaloPlayerB} />
 
       <Route path="/seasons" component={HaloSeason}/>
      
-      <Route path="/haloplayers" component={HaloPlayer} />
+      {/* <Route path="/haloplayers2" component={HaloPlayer} /> */}
 
       {/* <Route exact path="/" component={NavbarHalo}/>
       <Route path="/dogs" component={Dogs}/>  */}

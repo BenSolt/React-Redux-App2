@@ -11,23 +11,28 @@
 }
 
 .homebox{
-  height: 675px;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-size: cover;
+  /* padding: 0 0 236px 0; */
+  /* border: 2px solid red; */
+  /* height: 100vh; */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
   url('../api-halo5.jpg');
-     /* rgba(0, 0, 0, 0.507), */
 }
 
 @media only screen and (max-width: 500px) {
   .homebox{
-    height: 675px;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    background-repeat: no-repeat;
+    background-size: auto;
+    /* height: auto; */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url('../api-halo5.jpg');
      
   }
 }
 
 .text{
-  padding-top: 50px;
+  /* padding-top: 50px; */
+  padding: 50px 0 50px 0;
   background: 5px;
 }
 

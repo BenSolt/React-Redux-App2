@@ -14,6 +14,14 @@ export default function Home() {
             <br/>
             <h4 className='textwhite'>All data is from Microsoft 343</h4>
             </h2>
+
+            {/* <div className='Seasons'>
+                <select id = 'select-season' className='select'>
+                    <option>Winter 2020 Season</option>
+                    <option>Preseason</option>
+                </select>
+            </div> */}
+
            </div>
         
         </div>

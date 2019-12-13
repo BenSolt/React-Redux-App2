@@ -25,7 +25,7 @@ export default function Players2() {
     'mdsolt',
     'Mr DomeFace',
     'muscleman0927',
-    //'primelos',
+    'primelos',
     'PaulSolt',
     'Sausag3Tickl3r',
     'S0 HELP ME GOD',
@@ -56,7 +56,8 @@ export default function Players2() {
       .get (`stats/h5/servicerecords/arena?players=${players}`) 
       .then(res => {
         const info = res.data.Results.filter(p =>
-           p.Id.toLowerCase().includes(query.toLowerCase())
+           p.Id.toLowerCase().includes(query.toLowerCase()),
+          // p.Id.getElementsByClassName('PlayerCard').style.height="500px"
          );
         console.log(res.data.Results);
         setData(info);
