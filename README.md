@@ -6,4 +6,4 @@ This project allows you to practice the concepts and techniques learned in this 
 ### Description
 
 ## Credits
-Used Microsoft 343 Studios [Halo 5 API](ttps://developer.haloapi.com/)
+Used Microsoft 343 Studios [Halo 5 API](https://developer.haloapi.com/)
