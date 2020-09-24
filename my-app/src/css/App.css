@@ -1,0 +1,98 @@
+.App {
+  text-align: center;
+  /* background-color: #282c34; */
+  min-height: 100vh;
+  
+}
+
+.dark-mode {
+  color: #fff;
+  background-color: #313843;
+}
+
+.homebox{
+  background-size: cover;
+  /* padding: 0 0 236px 0; */
+  /* border: 2px solid red; */
+  /* height: 100vh; */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  url('../api-halo5.jpg');
+}
+
+@media only screen and (max-width: 500px) {
+  .homebox{
+    background-repeat: no-repeat;
+    background-size: auto;
+    /* height: auto; */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('../api-halo5.jpg');
+     
+  }
+}
+
+.text{
+  /* padding-top: 50px; */
+  padding: 50px 0 50px 0;
+  background: 5px;
+}
+
+@media only screen and (max-width: 500px) {
+  .text{
+    padding: 30px;
+    background: 5px;
+  }
+
+}
+
+.textwhite{
+  color: white;
+}
+
+
+
+
+
+/*/////////////////////////////////////////////////*/
+/*///////  HALO RANK  ////////////////////////////*/
+/*///////////////////////////////////////////////*/
+
+/* .Halo_Rank_Container{
+  background: lightblue;
+} */
+
+/* .Ranks{
+  display: flex;
+  margin-bottom: 5px;
+  border: 2px solid red;
+} */
+
+
+/*///////////////////////////////////////////*/
+/*///////  INPUT SEARCH FORM   ////////////*/
+/*/////////////////////////////////////////*/
+
+.search-form{
+  margin: 25px 0 25px 0;
+}
+.input{
+  padding: 5px;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
