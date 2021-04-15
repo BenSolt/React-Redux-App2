@@ -8,7 +8,7 @@ export const getHaloRankA = () => dispatch => {
     dispatch({type: FETCHING_INFO_HALO});
       //axios
      axiosWithAuth()
-     .get('https://www.haloapi.com/metadata/h5/metadata/csr-designations')
+     .get('metadata/h5/metadata/csr-designations')
     .then(res => {
         console.log(res.data)
         dispatch({type: FETCHING_INFO_HALO_SUCESS, payload: res.data})
