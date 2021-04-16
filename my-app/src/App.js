@@ -1,7 +1,6 @@
 import React from 'react';
 
 import './css/App.css';
-import './css/home.css';
 import './css/medals.css';
 import './css/Navbar.css';
 import './css/Player.css';
