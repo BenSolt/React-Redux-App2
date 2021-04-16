@@ -27,7 +27,7 @@ import Dogs from './components/Dogs';
 import NavbarHalo from './components/navbar/NavbarHalo';
 
 import { Route } from "react-router-dom";
-import SearchForm from './components/PlayerSearchForm';
+// import SearchForm from './components/PlayerSearchForm';
 
 
 

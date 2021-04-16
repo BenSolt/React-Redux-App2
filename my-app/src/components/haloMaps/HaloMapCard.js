@@ -6,7 +6,7 @@ export default function HaloMapCard({m}) {
     return (
       <div className="Mapcard">
           <h3>{m.name}</h3>
-          <img className="MapImage" src={m.imageUrl}/>
+          <img className="MapImage" src={m.imageUrl} alt="map images"/>
           <h4>{m.description}</h4>
           {/* {m.supportedGameModes} */}
            {/* {m.filter(str => (str.supportedGameModes === "Warzone"))} */}

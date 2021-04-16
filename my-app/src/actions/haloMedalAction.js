@@ -1,4 +1,3 @@
-import axios from 'axios';
 import axiosWithAuth from "../utils/axiosWithAuth";
 export const FETCHING_INFO_HALO_MEDAL = "FETCHING_INFO_HALO_MEDAL"
 export const FETCHING_FAIL_HALO_MEDAL  = "FETCHING_FAIL_HALO_MEDAL"

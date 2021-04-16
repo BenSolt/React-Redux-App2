@@ -1,4 +1,4 @@
-import axios from 'axios';
+// import axios from 'axios';
 import axiosWithAuth from "../utils/axiosWithAuth";
 export const FETCHING_INFO_HALO = "ETCHING_INFO_HALO"
 export const FETCHING_FAIL_HALO = "FETCHING_FAIL_HALO"

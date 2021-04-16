@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React, {useState} from 'react';
+// import React, {useState} from 'react';
 export const FETCHING_INFO = "FETCHING_INFO"
 export const FETCHING_FAIL = "FETCHING_FAIL"
 

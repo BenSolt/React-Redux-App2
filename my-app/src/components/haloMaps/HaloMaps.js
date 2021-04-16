@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import {getHaloMapA} from '../../actions/haloMapAction';
 
 import HaloMapCard from "./HaloMapCard";
-import NavbarHalo from '../navbar/NavbarHalo';
+// import NavbarHalo from '../navbar/NavbarHalo';
 
 const HaloMaps = ({ getHaloMapA, halodataM, isFetching, error}) => {
 

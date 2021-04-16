@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 
 
 
@@ -13,6 +13,7 @@ export default function HaloMedalCard({m}) {
     
           <div className='spriteholder'>
             <img className="sprite" src={m.spriteLocation.spriteSheetUri}
+                alt='halo medal images'
                 style={{
                 objectFit: "none",
                 objectPosition: `-${m.spriteLocation.left}px -${m.spriteLocation.top}px`

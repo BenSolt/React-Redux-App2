@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, {useEffect } from 'react';
 import { connect } from 'react-redux';
 
 import {getDogs} from '../actions/dogAction';
@@ -21,7 +21,8 @@ const Home = ({ getDogs, message, isFetching, error}) => {
             <h1>DOG IMAGES</h1>
 
             <div className='Img'>
-                <img src={message}/>
+                <img src={message}
+                alt='dog images'/>
                 <h2>test</h2>
             </div>
 

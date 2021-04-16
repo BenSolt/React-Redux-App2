@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import {getHaloRankA} from '../../actions/haloRankAction';
 import HaloRankCard from "./HaloRankCard";
-import NavbarHalo from '../navbar/NavbarHalo';
+// import NavbarHalo from '../navbar/NavbarHalo';
 
 const Home = ({ getHaloRankA, halodataR, isFetching, error}) => {
 
 
-const aRank = halodataR.filter(str => (str.name === "Bronze"))
+// const aRank = halodataR.filter(str => (str.name === "Bronze"))
 
 //const [hrank,setHrank] = useState([]);
 

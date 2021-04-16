@@ -4,8 +4,8 @@ import axiosWithAuth from "../../utils/axiosWithAuth";
 
 import HaloPlayerCard from "./HaloPlayerCard";
 
-import NavbarHalo from "../navbar/NavbarHalo";
-import HaloRankCard from "../haloRanks/HaloRankCard";
+// import NavbarHalo from "../navbar/NavbarHalo";
+// import HaloRankCard from "../haloRanks/HaloRankCard";
 
 export default function Players2() {
 
@@ -43,9 +43,9 @@ export default function Players2() {
 
   const [data, setData] = useState([]);
   const [query, setQuery] = useState("");
-  const [rankData, setRankData] = useState([]);
+  // const [rankData, setRankData] = useState([]);
 
-  const aRank = rankData.filter(str => (str.name === "Bronze"))
+  // const aRank = rankData.filter(str => (str.name === "Bronze"))
 
     //   useEffect((halodataR) => {
   //     getHaloRankA();
@@ -89,11 +89,9 @@ export default function Players2() {
     <div className="PlayerContainer">
         {data.map(p => {
          
-              return < HaloPlayerCard key={p.Id} p={p}/>
+          return < HaloPlayerCard key={p.Id} p={p}/>
         
         })}
-
-     
 
       </div>
     </div>
