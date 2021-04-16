@@ -53,7 +53,9 @@ export default function Players2() {
     
   useEffect(() => {
     axiosWithAuth()
-      .get (`stats/h5/servicerecords/arena?players=${players}`) 
+    
+      // .get (`stats/h5/servicerecords/arena?players=${players}`)
+      .get (`https://www.haloapi.com/stats/h5/servicerecords/arena?players=${players}`) 
       .then(res => {
         const info = res.data.Results.filter(p =>
            p.Id.toLowerCase().includes(query.toLowerCase()),
