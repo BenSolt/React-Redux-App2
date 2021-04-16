@@ -36,7 +36,7 @@ export default function Navbar() {
 
                 {/* <NavLink className='navlinkHalo' to='/seasons'>HALO SEASON</NavLink> */}
 
-                <NavLink className='navlinkHalo' to='/dogs'>dogs</NavLink>
+                {/* <NavLink className='navlinkHalo' to='/dogs'>dogs</NavLink> */}
 
             </nav> 
 
