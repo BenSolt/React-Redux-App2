@@ -20,7 +20,7 @@ import HaloPlayerB from './components/haloPlayers/HaloPlayerB';
 // import HaloSeason from './components/HaloSeasons/HaloSeason';
 // import HaloPlayer from './components/haloPlayers/HaloPlayer';
 
-import Dogs from './components/Dogs';
+// import Dogs from './components/Dogs';
 
 
 //NAV BAR
@@ -49,7 +49,7 @@ function App() {
 
       {/* <Route path="/seasons" component={HaloSeason}/> */}
 
-      <Route path="/dogs" component={Dogs} />
+      {/* <Route path="/dogs" component={Dogs} /> */}
      
 
 
