@@ -34,7 +34,7 @@ export default function Navbar() {
                 <NavLink className='navlinkHalo' to='/halomaps'>HALO MAPS</NavLink>
                 <NavLink className='navlinkHalo' to='/halomedals'>HALO MEDALS</NavLink>
                 
-                <NavLink className='navlinkHalo' to='/seasons'>HALO SEASON</NavLink>
+                {/* <NavLink className='navlinkHalo' to='/seasons'>HALO SEASON</NavLink> */}
 
                
 

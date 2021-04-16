@@ -11,8 +11,7 @@ import './css/haloSeason.css';
 //MY IMPORTS
 
 import Home from './components/Home';
-//import Dogs from './components/Dogs';
-//import Default from './components/Default';
+
 import HaloRank from './components/haloRanks/HaloRank';
 import HaloMaps from './components/haloMaps/HaloMaps';
 import HaloMedals from './components/haloMedals/HaloMedals';
@@ -46,12 +45,8 @@ function App() {
       <Route path="/halomedals" component={HaloMedals}/>
       <Route path="/haloplayers" component={HaloPlayerB} />
 
-      <Route path="/seasons" component={HaloSeason}/>
+      {/* <Route path="/seasons" component={HaloSeason}/> */}
      
-      {/* <Route path="/haloplayers2" component={HaloPlayer} /> */}
-
-      {/* <Route exact path="/" component={NavbarHalo}/>
-      <Route path="/dogs" component={Dogs}/>  */}
 
 
       </div>
