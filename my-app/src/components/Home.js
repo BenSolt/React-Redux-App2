@@ -1,5 +1,5 @@
 import React from "react";
-import Imag from '../api-halo5.jpg';
+// import Imag from '../api-halo5.jpg';
 
 export default function Home() {
 
@@ -20,8 +20,8 @@ export default function Home() {
                     <option>Winter 2020 Season</option>
                     <option>Preseason</option>
                 </select>
-            </div> */}
-
+            </div>  */}
+            
            </div>
         
         </div>

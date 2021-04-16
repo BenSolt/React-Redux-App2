@@ -14,7 +14,7 @@
   background-size: cover;
   /* padding: 0 0 236px 0; */
   /* border: 2px solid red; */
-  /* height: 100vh; */
+  height: 65vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
   url('../api-halo5.jpg');
 }
