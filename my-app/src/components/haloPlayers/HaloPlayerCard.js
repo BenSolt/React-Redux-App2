@@ -43,17 +43,6 @@ export default function HaloPlayerCard({p}) {
                     // p.Result.ArenaStats.HighestCsrAttained.Rank
 
 
-//////////////////////////////////////////////////////////////////////////
-                // Arena Playlist Stats... how get these to be images???
-
-    
-
-                //             
-                //         
-
-                    // const test2 =
-                    // p.Result.ArenaStats.ArenaPlaylistStats.Csr.Tier
-
                     const test =
                     p.Result.ArenaStats.ArenaPlaylistStats.map(p => {
                       return(
@@ -62,36 +51,12 @@ export default function HaloPlayerCard({p}) {
                       {/* {p.PlaylistId} */}
                       {p.MeasurementMatchesLeft}
 
-                        {/* {p.Csr.map(p => {
-                           return(
-                             <div>
-                              <div>Tier: {p.Tier}</div>    
-                              <div>Desig Id: {p.DesignationId}</div> 
-                              <div>precent: {p.PercentToNextTier}</div>
-                            </div>
-                           )
-                        })} */}
+
                            
                       </div>
                       )
                      })
                        
-//////////////////////////////////////////////////////////////////////////////////////
-                    // RANK IMAGE TO APPEAR ON PLAYER CARD- is this correct???
-
-                      //   function RankImage(HighestRankAttained) { 
-                      //     var image = "";
-                      //     if (HighestRankAttained > 1500) {
-                      //         image = "https://content.halocdn.com/media/Default/games/halo-5-guardians/csr/csr_top_array00-783f32318c8c49eda0365c5daa50f5b6.png"
-                      //     } 
-                      //     else {
-                      //         image = "https://content.halocdn.com/media/Default/games/halo-5-guardians/csr/unranked_00-61fca949c33f433ba7e7507d97ff130f.png"
-                      //     }  
-                      //     return image;
-                      // }
-                    
-                    
-                   
 
                     const Assasinations =
                     p.Result.ArenaStats.TotalAssassinations

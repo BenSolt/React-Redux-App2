@@ -18,9 +18,7 @@ import HaloMedals from './components/haloMedals/HaloMedals';
 import HaloPlayerB from './components/haloPlayers/HaloPlayerB';
 
 // import HaloSeason from './components/HaloSeasons/HaloSeason';
-// import HaloPlayer from './components/haloPlayers/HaloPlayer';
 
-// import Dogs from './components/Dogs';
 
 
 //NAV BAR
